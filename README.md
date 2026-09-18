@@ -161,13 +161,13 @@ python tests/test_synthetic.py && python tests/test_arch.py
 ## Resultados detallados y bitácora
 
 - `TBC_REAL_TEST_REPORT.md`: NanoDex Fase 1+2+TBC-R con per-layer E.
-- `README` §8/§9 anteriores (casos detallados por capa, incidentes de
-  ingeniería, metodología fina) se conservan íntegros en
-  `docs/HISTORIA-Y-DETALLE.md`; la evidencia por corrida vive en `logs/`
-  (sintéticos, compilaciones, PPL torch y binaria, generaciones, benchmarks,
-  kernel-test, verifies).
+- `docs/HISTORIA-Y-DETALLE.md`: casos detallados por capa y arquitectura,
+  incidentes de ingeniería y metodología fina de cada experimento.
+- `logs/`: evidencia por corrida (sintéticos, compilaciones, PPL torch y
+  binaria, generaciones, benchmarks, kernel-test, verifies).
 - `tbc_output*/`: manifests, `summary.json`, `recovery.json`
   (los pesos/GGUF se regeneran; no se versionan por tamaño).
+- `data/`: prompts y textos de evaluación usados por los scripts.
 
 ## Limitaciones conocidas
 

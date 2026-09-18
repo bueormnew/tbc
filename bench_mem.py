@@ -20,7 +20,7 @@ MODELS = [
     ("TBC-R-F32", os.path.join(BASE, "tbc_output_r", "nano-r-f32.gguf")),
     ("TBC-R-I2_S", os.path.join(BASE, "tbc_output", "model-i2_s.gguf")),
 ]
-CORPUS = os.path.join(BASE, "eval_corpus.txt")
+CORPUS = os.path.join(BASE, "data", "eval_corpus.txt")
 
 
 def peak_run(cmd, timeout=300):

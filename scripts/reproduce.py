@@ -39,7 +39,7 @@ def main():
     run([py, "kernel_test.py"], "logs/kernel_test.log")
     if os.path.exists(BIN) and not SKIP_BIN:
         gguf = os.path.join(BASE, "tbc_output", "nanodex-tbc-i2s.gguf")
-        run([BIN, "-m", gguf, "-f", "prompt.txt", "-n", "50", "--threads", "4"],
+        run([BIN, "-m", gguf, "-f", "data/prompt.txt", "-n", "50", "--threads", "4"],
             "logs/bitnet_cpp_run.log")
     else:
         print("binario bitnet.cpp ausente: ver third_party/README.md para compilarlo")

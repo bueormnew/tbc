@@ -7,5 +7,5 @@ text = (
     "Ternary quantization constrains weights to minus one, zero, or plus one. "
     "Behavioral compilation searches discrete configurations that preserve function. "
 ) * 12
-open(r"C:\Users\gerso\Desktop\TBC\eval_text.txt", "w").write(text)
+open(r"C:\Users\gerso\Desktop\TBC\data\eval_text.txt", "w").write(text)
 print("bytes:", len(text))

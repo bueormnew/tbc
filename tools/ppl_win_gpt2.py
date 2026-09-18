@@ -9,7 +9,7 @@ from tbc.search import dequantize_ternary
 model = GPT2LMHeadModel.from_pretrained("openai-community/gpt2", dtype=torch.float32)
 model.eval()
 tok = GPT2Tokenizer.from_pretrained("openai-community/gpt2")
-txt = open(r"C:\Users\gerso\Desktop\TBC\eval_corpus.txt").read()
+txt = open(r"C:\Users\gerso\Desktop\TBC\data\eval_corpus.txt").read()
 ids = tok(txt, return_tensors="pt")["input_ids"]
 print("tokens:", ids.shape[1])
 for ws in (32, 256):

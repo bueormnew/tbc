@@ -10,7 +10,7 @@ from tbc.perplexity import apply_dequantized, restore, perplexity
 model = AutoModelForCausalLM.from_pretrained("DedeProGames/NanoDex-1M", trust_remote_code=True, dtype=torch.float32)
 model.eval()
 tok = AutoTokenizer.from_pretrained("DedeProGames/NanoDex-1M", trust_remote_code=True)
-txt = open(r"C:\Users\gerso\Desktop\TBC\eval_corpus.txt").read()
+txt = open(r"C:\Users\gerso\Desktop\TBC\data\eval_corpus.txt").read()
 ids = tok(txt, return_tensors="pt")["input_ids"]
 print("tokens:", ids.shape[1])
 wins = [ids[:, i:i+32] for i in range(0, ids.shape[1], 32) if ids[:, i:i+32].shape[1] == 32]
