@@ -5,31 +5,61 @@ from typing import List
 
 
 def parse_budget(s: str | int) -> int:
-    """Convierte '6GB'/'512MB'/int -> bytes."""
+    """Convierte '6GB'/'512MB'/'auto'/int -> bytes.
+
+    'auto' usa el 80% de la memoria disponible del sistema (RAM; y VRAM si
+    hay CUDA). Así cualquier usuario compila sin conocer los números.
+    """
     if isinstance(s, int):
         return s
-    s = str(s).strip().upper().replace(" ", "")
+    t = str(s).strip().upper().replace(" ", "")
+    if t == "AUTO":
+        import psutil
+        import torch
+        if torch.cuda.is_available():
+            try:
+                free, _ = torch.cuda.mem_get_info()
+                return int(free * 0.8)
+            except Exception:
+                pass
+        return int(psutil.virtual_memory().available * 0.8)
     mult = 1
-    if s.endswith("GB"):
+    if t.endswith("GB"):
         mult = 1024 ** 3
-        num = s[:-2]
-    elif s.endswith("MB"):
+        num = t[:-2]
+    elif t.endswith("MB"):
         mult = 1024 ** 2
-        num = s[:-2]
-    elif s.endswith("KB"):
+        num = t[:-2]
+    elif t.endswith("KB"):
         mult = 1024
-        num = s[:-2]
-    elif s.endswith("B"):
-        num = s[:-1]
+        num = t[:-2]
+    elif t.endswith("B"):
+        num = t[:-1]
     else:
-        num = s
+        num = t
     return int(float(num) * mult)
+
+
+def env_budget(var: str, default: str = "auto") -> str | int:
+    """Lee presupuesto desde variable de entorno (ej. TBC_RAM_BUDGET=24GB)."""
+    import os
+    return os.environ.get(var, default)
+
+
+def env_dtype(var: str = "TBC_DTYPE", default: str = "float32"):
+    """float32 (reproduce resultados publicados) o float16 (modelos grandes)."""
+    import os
+    import torch
+    name = os.environ.get(var, default).lower()
+    return {"float32": torch.float32, "fp32": torch.float32,
+            "float16": torch.float16, "fp16": torch.float16,
+            "bfloat16": torch.bfloat16, "bf16": torch.bfloat16}[name]
 
 
 @dataclass
 class TBCConfig:
-    vram_budget: str | int = "6GB"
-    ram_budget: str | int = "6GB"
+    vram_budget: str | int = "auto"
+    ram_budget: str | int = "auto"
     group_size: int = 32
     beam_size: int = 4
     epsilon_target: float = 0.05

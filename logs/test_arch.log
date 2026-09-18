@@ -1,0 +1,43 @@
+2026-09-18 14:31:57,468 OK LlamaForCausalLM       arch=llama      objetivos=7
+2026-09-18 14:31:57,498 OK Qwen2ForCausalLM       arch=qwen2      objetivos=7
+2026-09-18 14:31:57,535 OK Qwen3ForCausalLM       arch=qwen3      objetivos=7
+2026-09-18 14:31:57,569 OK MistralForCausalLM     arch=mistral    objetivos=7
+2026-09-18 14:31:57,609 OK MixtralForCausalLM     arch=mixtral    objetivos=4
+2026-09-18 14:31:57,655 OK Gemma2ForCausalLM      arch=gemma2     objetivos=7
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 63), got 32000. This may result in unexpected behavior.
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 63), got 32000. This may result in unexpected behavior.
+2026-09-18 14:31:57,682 SKIP Phi3ForCausalLM (kwargs): Padding_idx must be within num_embeddings
+2026-09-18 14:31:57,721 OK FalconForCausalLM      arch=falcon     objetivos=4
+[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 63), got 50256. This may result in unexpected behavior.
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 63), got 50256. This may result in unexpected behavior.
+2026-09-18 14:31:57,775 OK GPT2LMHeadModel        arch=gpt2       objetivos=4
+2026-09-18 14:31:57,821 OK GPTNeoXForCausalLM     arch=gpt_neox   objetivos=4
+2026-09-18 14:31:57,870 OK BloomForCausalLM       arch=bloom      objetivos=4
+2026-09-18 14:31:58,074 OK DeepseekV2ForCausalLM  arch=deepseek_v2 objetivos=6
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 63), got 50279. This may result in unexpected behavior.
+2026-09-18 14:31:58,114 OK Olmo2ForCausalLM       arch=olmo2      objetivos=7
+2026-09-18 14:31:58,170 OK Qwen3MoeForCausalLM    arch=qwen3moe   objetivos=4
+2026-09-18 14:31:58,180 [TBC] arch=llama capas_objetivo=7 group=32 beam=2
+2026-09-18 14:31:58,226 [TBC] sensitivity: {'model.layers.0.self_attn.q_proj': 0.812, 'model.layers.0.self_attn.k_proj': 0.854, 'model.layers.0.self_attn.v_proj': 0.871, 'model.layers.0.self_attn.o_proj': 1.0, 'model.layers.0.mlp.gate_proj': 0.85, 'model.layers.0.mlp.up_proj': 0.866, 'model.layers.0.mlp.down_proj': 0.871}
+2026-09-18 14:31:58,226 [TBC] === pasada epsilon=0.90 ===
+2026-09-18 14:31:58,234 [TBC] capa=model.layers.0.self_attn.q_proj S=0.81 E=0.4248 (init 0.4255) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,243 [TBC] capa=model.layers.0.mlp.gate_proj S=0.85 E=0.4352 (init 0.4353) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,250 [TBC] capa=model.layers.0.self_attn.k_proj S=0.85 E=0.4566 (init 0.4584) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,258 [TBC] capa=model.layers.0.mlp.up_proj S=0.87 E=0.4436 (init 0.4436) evals=16 pruned=16 t=0.0s OK
+2026-09-18 14:31:58,265 [TBC] capa=model.layers.0.self_attn.v_proj S=0.87 E=0.4672 (init 0.4672) evals=16 pruned=16 t=0.0s OK
+2026-09-18 14:31:58,281 [TBC] capa=model.layers.0.mlp.down_proj S=0.87 E=0.4456 (init 0.4464) evals=35 pruned=29 t=0.0s OK
+2026-09-18 14:31:58,289 [TBC] capa=model.layers.0.self_attn.o_proj S=1.00 E=0.5190 (init 0.5241) evals=19 pruned=13 t=0.0s OK
+2026-09-18 14:31:58,290 [TBC] convergidas: 0/7
+2026-09-18 14:31:58,290 SMOKE LlamaForCausalLM     E=0.456 status=COMPILED
+2026-09-18 14:31:58,300 [TBC] arch=mixtral capas_objetivo=4 group=32 beam=2
+2026-09-18 14:31:58,326 [TBC] sensitivity: {'model.layers.0.self_attn.q_proj': 0.98, 'model.layers.0.self_attn.k_proj': 0.941, 'model.layers.0.self_attn.v_proj': 0.902, 'model.layers.0.self_attn.o_proj': 1.0}
+2026-09-18 14:31:58,326 [TBC] === pasada epsilon=0.90 ===
+2026-09-18 14:31:58,332 [TBC] capa=model.layers.0.self_attn.v_proj S=0.90 E=0.4198 (init 0.4206) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,339 [TBC] capa=model.layers.0.self_attn.k_proj S=0.94 E=0.4352 (init 0.4387) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,346 [TBC] capa=model.layers.0.self_attn.q_proj S=0.98 E=0.4443 (init 0.4464) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,353 [TBC] capa=model.layers.0.self_attn.o_proj S=1.00 E=0.4523 (init 0.4555) evals=17 pruned=15 t=0.0s OK
+2026-09-18 14:31:58,353 [TBC] convergidas: 0/4
+2026-09-18 14:31:58,353 SMOKE MixtralForCausalLM   E=0.438 status=COMPILED
+2026-09-18 14:31:58,353 arch: ok=13 skipped=1 failed=[]
+2026-09-18 14:31:58,354 OK fake-MoE mixtral    objetivos=3 (router excluido)
+2026-09-18 14:31:58,355 OK fake-MoE qwen3moe   objetivos=3 (router excluido)

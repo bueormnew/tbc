@@ -42,18 +42,16 @@ class TBCModel:
 
 
 def detect_architecture(model: nn.Module) -> str:
+    from .arch import detect_arch_from_type
     name = type(model).__name__.lower()
     cfg = getattr(model, "config", None)
     mt = str(getattr(cfg, "model_type", "")).lower() if cfg is not None else ""
-    txt = name + " " + mt
-    if "llama" in txt:
-        return "llama"
-    if "qwen3" in txt:
-        return "qwen3"
-    if "qwen" in txt:
-        return "qwen2"
-    if "gpt2" in txt:
-        return "gpt2"
+    hit = detect_arch_from_type(mt)
+    if hit != "unknown":
+        return hit
+    hit = detect_arch_from_type(name)
+    if hit != "unknown":
+        return hit
     # fallback por nombres de módulos
     mods = [n for n, _ in model.named_modules()]
     blob = " ".join(mods[:200]).lower()
@@ -65,23 +63,30 @@ def detect_architecture(model: nn.Module) -> str:
 
 
 def get_ternarize_targets(model: nn.Module, arch: str) -> list[tuple[str, nn.Linear]]:
-    """Detecta lineales a ternarizar según arquitectura (Sec 2 del prompt).
+    """Detecta lineales a ternarizar según arquitectura (ver tbc/arch.py).
 
-    Usa tbc/arch.py. GPT-2 usa Conv1D (no nn.Linear): se incluyen por forma
-    de peso 2D; la convención [out,in] la maneja tbc/linalg.py.
+    Respeta `exclude` (routers MoE y similares quedan en precisión alta) y
+    acepta Conv1D/pesos 2D (GPT-2); la convención [out,in] la maneja linalg.
     """
     from .arch import arch_spec
-    keys = arch_spec(arch).get("linears", ())
+    spec = arch_spec(arch)
+    keys = spec.get("linears", ())
+    excl = spec.get("exclude", ())
+
+    def wanted(nm: str) -> bool:
+        if excl and any(x in nm for x in excl):
+            return False
+        return (not keys) or any(k in nm for k in keys)
+
     out = []
     for name, mod in model.named_modules():
-        if isinstance(mod, nn.Linear):
-            if not keys or any(k in name for k in keys):
-                out.append((name, mod))
+        if isinstance(mod, nn.Linear) and wanted(name):
+            out.append((name, mod))
     if not out:
         # Fallback: módulos con peso 2D (cubre Conv1D de GPT-2 y customs)
         for name, mod in model.named_modules():
             w = getattr(mod, "weight", None)
-            if isinstance(w, torch.nn.Parameter) and w.dim() == 2 and (not keys or any(k in name for k in keys)):
+            if isinstance(w, torch.nn.Parameter) and w.dim() == 2 and wanted(name):
                 out.append((name, mod))
     return out
 

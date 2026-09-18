@@ -1,0 +1,36 @@
+{
+  "arch": "qwen3moe",
+  "hf_types": [
+    "qwen3_moe"
+  ],
+  "linears": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj",
+    "experts"
+  ],
+  "exclude": [
+    "mlp.gate",
+    "mlp.shared_expert_gate"
+  ],
+  "moe": {
+    "experts_sub": "experts",
+    "router_sub": [
+      "mlp.gate"
+    ]
+  },
+  "fused": null,
+  "conv1d": false,
+  "rope": true,
+  "gguf_arch": "qwen3moe",
+  "meta_prefix": "qwen3moe",
+  "support": "experimental",
+  "notes": "MoE: expertos ternarizables, router FP. GGUF apilado por validar."
+}
