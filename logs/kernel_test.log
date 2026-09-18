@@ -1,0 +1,7 @@
+GGUF ver=3 tensores=48
+blk.0.attn_q.weight: dims=[128, 128] numel=16384 blob=4128B (=numel/4+32 OK)
+scale f32 = 0.134421
+dequant ok: min=-0.1344 max=0.1344 (esperado ±0.1344 y 0)
+acuerdo de patrones ternarios kernel-vs-TBC: 100.00%
+max|Y_kernel - Y_torch| = 0.00e+00 (umbral 1e-3)
+KERNEL TEST PASS

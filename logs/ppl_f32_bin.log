@@ -1,0 +1,17 @@
+0.00.025.651 W load: missing pre-tokenizer type, using: 'default'
+0.00.025.658 W load:                                             
+0.00.025.658 W load: ************************************        
+0.00.025.659 W load: GENERATION QUALITY WILL BE DEGRADED!        
+0.00.025.659 W load: CONSIDER REGENERATING THE MODEL             
+0.00.025.659 W load: ************************************        
+0.00.025.659 W load:                                             
+0.00.038.723 W llama_perplexity: model was trained on only 512 context tokens (2048 specified)
+0.00.038.736 I 
+0.00.038.759 I system_info: n_threads = 4 (n_threads_batch = 4) / 18 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.038.772 I perplexity: tokenizing the input ..
+0.00.041.035 I perplexity: tokenization took 2.259 ms
+0.00.041.084 I perplexity: calculating perplexity over 2 chunks, n_ctx=512, batch_size=2048, n_seq=4
+0.00.072.318 I perplexity: 0.03 seconds per pass - ETA 0.00 minutes
+[1]946.2486,[2]997.6746,
+0.00.075.433 I Final estimate: PPL = 997.6746 +/- 126.06490
+

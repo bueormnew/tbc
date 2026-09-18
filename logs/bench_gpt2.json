@@ -1,0 +1,23 @@
+{
+  "base-FP32": {
+    "peak_rss_mb": 540.7,
+    "pp_ts": 847.46,
+    "tg_ts": 60.09,
+    "file_mb": 654.1,
+    "ppl_bin": 96.4896
+  },
+  "TBC-R-F32": {
+    "peak_rss_mb": 540.8,
+    "pp_ts": 882.51,
+    "tg_ts": 55.16,
+    "file_mb": 654.1,
+    "ppl_bin": 285.3679
+  },
+  "TBC-R-I2_S": {
+    "peak_rss_mb": 354.1,
+    "pp_ts": 991.54,
+    "tg_ts": 82.26,
+    "file_mb": 466.1,
+    "ppl_bin": 3769.1058
+  }
+}

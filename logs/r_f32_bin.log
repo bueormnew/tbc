@@ -1,0 +1,11 @@
+0.00.357.180 W load: control-looking token:  50256 '<|endoftext|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.815.171 W llama_perplexity: model was trained on only 1024 context tokens (2048 specified)
+0.00.815.180 I 
+0.00.815.225 I system_info: n_threads = 4 (n_threads_batch = 4) / 18 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.815.248 I perplexity: tokenizing the input ..
+0.00.822.426 I perplexity: tokenization took 7.169 ms
+0.00.822.524 I perplexity: calculating perplexity over 5 chunks, n_ctx=256, batch_size=2048, n_seq=8
+0.03.050.371 I perplexity: 2.23 seconds per pass - ETA 0.02 minutes
+[1]153.8875,[2]149.5160,[3]143.9047,[4]267.6302,[5]285.3679,
+0.03.120.401 I Final estimate: PPL = 285.3679 +/- 43.32590
+

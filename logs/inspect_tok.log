@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+backend model type: BPE
+model keys: []
+vocab size: 2048
+tok0: '<|endoftext|>' tok1: '<|pad|>' tok2: '!'
+pre_tokenizer: ByteLevel
+decoder: ByteLevel
+byte_level: {}
+encode Hello: [41, 475, 80, 13, 338, 757]

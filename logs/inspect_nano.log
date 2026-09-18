@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+model_type: llama
+vocab_size = 2048
+hidden_size = 128
+intermediate_size = 288
+num_hidden_layers = 5
+num_attention_heads = 8
+num_key_value_heads = 4
+max_position_embeddings = 512
+rms_norm_eps = 1e-05
+rope_theta = N/A
+tie_word_embeddings = True
+hidden_act = silu
+head_dim = 16
+tok class: TokenizersBackend len: 2048
+bos: 0 eos: 0 pad: 1 unk: None
+sample decode: <|pad|>!"#$

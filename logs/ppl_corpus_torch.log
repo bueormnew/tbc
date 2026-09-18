@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   9%|▉         | 14/148 [00:00<00:01, 84.44it/s]Loading weights:  16%|█▌        | 23/148 [00:00<00:02, 53.94it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 366.74it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1409 > 1024). Running this sequence through the model will result in indexing errors
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+tokens: 1409
+windows: 44
+PPL torch-fp32 corpus = 265.556

@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "C:\Users\gerso\Desktop\TBC\kernel_test.py", line 129, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\gerso\Desktop\TBC\kernel_test.py", line 81, in main
+    ver, infos, data, dstart = parse_gguf(GGUF)
+                               ~~~~~~~~~~^^^^^^
+  File "C:\Users\gerso\Desktop\TBC\kernel_test.py", line 51, in parse_gguf
+    (nd,) = struct.unpack("<I", data[pos:pos+4])[0]; pos += 4
+    ^^^^^
+TypeError: cannot unpack non-iterable int object
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-390c307
+model      : tbc_output\nanodex-tbc-i2s.gguf
+ftype      : all F32
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Hello, I am a small language model
+
+-camamamamentsalimationededededededes of casasasisptermintentenyyardsredredredredredredredredredredredredredredredredredred
+
+[ Prompt: 11400.7 t/s | Generation: 1478.2 t/s ]
+
+> 
+
+> 
+
+Exiting...
+

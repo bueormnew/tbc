@@ -1,0 +1,36 @@
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-390c307
+model      : tbc_output_gpt2\gpt2-tbc-i2s.gguf
+ftype      : all F32
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Hello, I am a small language model
+
+...... hell h n all! Needless on... scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled scrambled
+
+[ Prompt: 1007.3 t/s | Generation: 145.1 t/s ]
+
+> 
+
+> 
+
+Exiting...

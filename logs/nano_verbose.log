@@ -1,0 +1,41 @@
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-390c307
+model      : tbc_output\nanodex-tbc-f32.gguf
+ftype      : all F32
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Hello, I am a small language model
+
+<|im_start|>user
+Hello, I am a small language model<|im_end|>
+<|im_start|>assistant
+
+
+(
+
+[ Prompt: 15555.6 t/s | Generation: 1000000.0 t/s ]
+
+> 
+
+> 
+
+> [0m

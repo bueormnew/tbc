@@ -1,0 +1,82 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   5%|▌         | 8/148 [00:00<00:01, 79.52it/s]Loading weights:  20%|█▉        | 29/148 [00:00<00:01, 90.66it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 434.30it/s]
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+PPL FP32-original = 22.62
+PPL TBC-puro(48/48) = 12133.87
+PPL TBC-A sin-c_proj(24/48) = 625.64
+PPL TBC-A solo-c_fc(12/48) = 477.05
+--- FP32-original ---
+Hello, I am a small language modeler. I am a small language modeler. I am a small language modeler. I am a small language modeler. I am a small language modeler. I am a small language model
+--- TBC-puro(48/48) ---
+Hello, I am a small language model was was was was was was was was was was was was ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- TBC-A sin-c_proj(24/48) ---
+Hello, I am a small language model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- TBC-A solo-c_fc(12/48) ---
+Hello, I am a small language model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model model
+DONE

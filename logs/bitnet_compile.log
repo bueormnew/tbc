@@ -1,0 +1,1016 @@
+CWD=C:\Users\gerso\Desktop\TBC\third_party\BitNet
+CLEAN_RC=0
+-- The C compiler identification is Clang 22.1.6
+-- The CXX compiler identification is Clang 22.1.6
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/gerso/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260519-ucrt-x86_64/bin/clang.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/gerso/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260519-ucrt-x86_64/bin/clang++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+CMAKE_BUILD_TYPE=Release
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.54.0.windows.1")
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: C:/Users/gerso/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260519-ucrt-x86_64/bin/clang.exe
+-- ccache found, compilation results will be cached. Disable with GGML_CCACHE=OFF.
+-- CMAKE_SYSTEM_PROCESSOR: AMD64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP: TRUE (found version "5.1")
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+-- ggml version: 0.15.3
+-- ggml commit:  390c307-dirty
+-- Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY OPENSSL_INCLUDE_DIR) 
+CMake Warning at 3rdparty/llama.cpp/vendor/cpp-httplib/CMakeLists.txt:152 (message):
+  OpenSSL not found, HTTPS support disabled
+
+
+-- Configuring done (8.3s)
+-- Generating done (0.6s)
+-- Build files have been written to: C:/Users/gerso/Desktop/TBC/third_party/BitNet/build
+CONFIGURE_RC=0
+[1/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.obj
+[2/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.obj
+[3/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.obj
+[4/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-i2s.c.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:25:63: warning: unused parameter 'bs' [-Wunused-parameter]
+   25 | void ggml_gemv_i2_i8_s(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, const void * GGML_RESTRICT vy, int nr, int nc) {
+      |                                                               ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:25:133: warning: unused parameter 'nr' [-Wunused-parameter]
+   25 | void ggml_gemv_i2_i8_s(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, const void * GGML_RESTRICT vy, int nr, int nc) {
+      |                                                                                                                                     ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:25:6: warning: no previous prototype for function 'ggml_gemv_i2_i8_s' [-Wmissing-prototypes]
+   25 | void ggml_gemv_i2_i8_s(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, const void * GGML_RESTRICT vy, int nr, int nc) {
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:25:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+   25 | void ggml_gemv_i2_i8_s(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, const void * GGML_RESTRICT vy, int nr, int nc) {
+      | ^
+      | static 
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:53:19: warning: unused variable 'one16' [-Wunused-variable]
+   53 |     const __m256i one16 = _mm256_set1_epi16(1);
+      |                   ^~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:38:6: warning: no previous prototype for function 'ggml_gemm_i2_i8_s' [-Wmissing-prototypes]
+   38 | void ggml_gemm_i2_i8_s(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, const void * GGML_RESTRICT vy, int nr, int nc) {
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:38:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+   38 | void ggml_gemm_i2_i8_s(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, const void * GGML_RESTRICT vy, int nr, int nc) {
+      | ^
+      | static 
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:262:19: warning: unused variable 'one16' [-Wunused-variable]
+  262 |     const __m256i one16 = _mm256_set1_epi16(1);
+      |                   ^~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:233:6: warning: no previous prototype for function 'ggml_gemm_i2_i8_s_interleaved' [-Wmissing-prototypes]
+  233 | void ggml_gemm_i2_i8_s_interleaved(int n, float * GGML_RESTRICT s, size_t bs,
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:233:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  233 | void ggml_gemm_i2_i8_s_interleaved(int n, float * GGML_RESTRICT s, size_t bs,
+      | ^
+      | static 
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:428:6: warning: no previous prototype for function 'ggml_gemv_i2_i8_s_interleaved' [-Wmissing-prototypes]
+  428 | void ggml_gemv_i2_i8_s_interleaved(int n, float * GGML_RESTRICT s, size_t bs,
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-i2s.c:428:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  428 | void ggml_gemv_i2_i8_s_interleaved(int n, float * GGML_RESTRICT s, size_t bs,
+      | ^
+      | static 
+8 warnings generated.
+[5/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/quants.c:1392:39: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1392 |     const uint8_t *    x = (uint8_t *)vx;
+      |                                       ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/quants.c:1393:38: warning: cast from 'const void *' to 'signed char *' drops const qualifier [-Wcast-qual]
+ 1393 |     const int8_t  *    y = (int8_t *)vy;
+      |                                      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/quants.c:1390:63: warning: unused parameter 'bs' [-Wunused-parameter]
+ 1390 | static void ggml_vec_dot_i2_i8_s_1x1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                               ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/quants.c:1390:119: warning: unused parameter 'by' [-Wunused-parameter]
+ 1390 | static void ggml_vec_dot_i2_i8_s_1x1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                                                                                       ^
+4 warnings generated.
+[6/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.obj
+[7/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.obj
+[8/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.obj
+[9/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.obj
+[10/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.obj
+[11/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.obj
+[12/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.obj
+[13/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.obj
+[14/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/repack.cpp:4862:16: warning: 'return' will never be executed [-Wunreachable-code-return]
+ 4862 |         return true;
+      |                ^~~~
+1 warning generated.
+[15/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.obj
+[16/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.obj
+[17/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.obj
+[18/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.obj
+[19/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.obj
+[20/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.obj
+[21/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ops.cpp:4795:21: warning: unused variable 'type' [-Wunused-variable]
+ 4795 |     const ggml_type type = src0->type;
+      |                     ^~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5726:13: warning: 4 enumeration values not handled in switch: 'GGML_TYPE_I2_S', 'GGML_TYPE_I8_S', 'GGML_TYPE_TL1'... [-Wswitch]
+ 5726 |     switch (src0->type) {
+      |             ^~~~~~~~~~
+2 warnings generated.
+[22/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/llamafile/sgemm.cpp:1415:23: warning: unused variable 'one16' [-Wunused-variable]
+ 1415 |         const __m256i one16 = _mm256_set1_epi16(1);
+      |                       ^~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml-cpu/llamafile/sgemm.cpp:1498:16: warning: private field 'lda' is not used [-Wunused-private-field]
+ 1498 |     int64_t k, lda, ldb, ldc;
+      |                ^
+2 warnings generated.
+[23/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.obj
+[24/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.obj
+[25/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-adapter.cpp.obj
+[26/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.obj
+[27/406] Building CXX object 3rdparty/llama.cpp/tools/ui/CMakeFiles/llama-ui-embed.dir/embed.cpp.obj
+[28/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-cparams.cpp.obj
+[29/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-arch.cpp.obj
+[30/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama.cpp.obj
+[31/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-chat.cpp.obj
+[32/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-batch.cpp.obj
+[33/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.obj
+[34/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-grammar.cpp.obj
+[35/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-hparams.cpp.obj
+[36/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-context.cpp.obj
+[37/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-graph.cpp.obj
+[38/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-impl.cpp.obj
+[39/406] Building C object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:936:37: warning: cast from 'void (*)(const uint8_t *, float *, int64_t, const float)' (aka 'void (*)(const unsigned char *, float *, long long, const float)') to 'ggml_to_float_t' (aka 'void (*)(const void *restrict, float *restrict, long long)') converts to incompatible function type [-Wcast-function-type-mismatch]
+  936 |         .to_float                 = (ggml_to_float_t) dequantize_row_i2_s,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:931:24: warning: initializer overrides prior initialization of this subobject [-Winitializer-overrides]
+  931 |     [GGML_TYPE_I2_S] = {
+      |                        ^
+  932 |         .type_name                = "i2_s",
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  933 |         .blck_size                = 1,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  934 |         .type_size                = sizeof(int8_t),
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  935 |         .is_quantized             = true,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  936 |         .to_float                 = (ggml_to_float_t) dequantize_row_i2_s,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  937 |     },
+      |     ~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:913:12: note: previous initialization is here
+  913 |     [36] = { // GGML_TYPE_IQ4_NL_4_4
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+  914 |         .type_name                = "TYPE_IQ4_NL_4_4 REMOVED, use IQ4_NL with runtime repacking",
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  915 |         .blck_size                = 0,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  916 |         .type_size                = 0,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  917 |         .is_quantized             = false,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  918 |     },
+      |     ~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:938:24: warning: initializer overrides prior initialization of this subobject [-Winitializer-overrides]
+  938 |     [GGML_TYPE_I8_S] = {
+      |                        ^
+  939 |         .type_name                = "i8_s",
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  940 |         .blck_size                = 1,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  941 |         .type_size                = sizeof(int8_t),
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  942 |         .is_quantized             = true,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  943 |     },
+      |     ~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:919:12: note: previous initialization is here
+  919 |     [37] = { // GGML_TYPE_IQ4_NL_4_8
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+  920 |         .type_name                = "TYPE_IQ4_NL_4_8 REMOVED, use IQ4_NL with runtime repacking",
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  921 |         .blck_size                = 0,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  922 |         .type_size                = 0,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  923 |         .is_quantized             = false,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  924 |     },
+      |     ~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:944:23: warning: initializer overrides prior initialization of this subobject [-Winitializer-overrides]
+  944 |     [GGML_TYPE_TL1] = {
+      |                       ^
+  945 |         .type_name                = "tl1",
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  946 |         .blck_size                = 1,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  947 |         .type_size                = sizeof(int8_t),
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  948 |         .is_quantized             = false,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  949 |     },
+      |     ~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/ggml/src/ggml.c:925:12: note: previous initialization is here
+  925 |     [38] = { // GGML_TYPE_IQ4_NL_8_8
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+  926 |         .type_name                = "TYPE_IQ4_NL_8_8 REMOVED, use IQ4_NL with runtime repacking",
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  927 |         .blck_size                = 0,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  928 |         .type_size                = 0,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  929 |         .is_quantized             = false,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  930 |     },
+      |     ~
+4 warnings generated.
+[40/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-io.cpp.obj
+[41/406] Linking CXX static library 3rdparty\llama.cpp\ggml\src\ggml-base.a
+[42/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache.cpp.obj
+[43/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/__/__/__/__/src/ggml-bitnet-lut.cpp.obj
+[44/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache-iswa.cpp.obj
+[45/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache-dsa.cpp.obj
+[46/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-memory-hybrid-iswa.cpp.obj
+[47/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-memory.cpp.obj
+[48/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache-dsv4.cpp.obj
+[49/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.obj
+[50/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.obj
+[51/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-model-saver.cpp.obj
+[52/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-model.cpp.obj
+[53/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-quant.cpp.obj
+[54/406] Building CXX object 3rdparty/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/__/__/__/__/src/ggml-bitnet-mad.cpp.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:51:100: warning: unused parameter 'quant_weights' [-Wunused-parameter]
+   51 | size_t quantize_i2_s(const float * src, void * dst, int64_t nrow, int64_t n_per_row, const float * quant_weights) {
+      |                                                                                                    ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:200:39: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  200 |     const uint8_t *    x = (uint8_t *)vx;
+      |                                       ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:201:38: warning: cast from 'const void *' to 'signed char *' drops const qualifier [-Wcast-qual]
+  201 |     const int8_t  *    y = (int8_t *)vy;
+      |                                      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:198:56: warning: unused parameter 'bs' [-Wunused-parameter]
+  198 | void ggml_vec_dot_i2_i8_s_1x1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                        ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:198:112: warning: unused parameter 'by' [-Wunused-parameter]
+  198 | void ggml_vec_dot_i2_i8_s_1x1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                                                                                ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:198:6: warning: no previous prototype for function 'ggml_vec_dot_i2_i8_s_1x1' [-Wmissing-prototypes]
+  198 | void ggml_vec_dot_i2_i8_s_1x1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:198:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  198 | void ggml_vec_dot_i2_i8_s_1x1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      | ^
+      | static 
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:416:39: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  416 |     const uint8_t *    x = (uint8_t *)vx;
+      |                                       ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:417:38: warning: cast from 'const void *' to 'signed char *' drops const qualifier [-Wcast-qual]
+  417 |     const int8_t  *    y = (int8_t *)vy;
+      |                                      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:414:60: warning: unused parameter 'bs' [-Wunused-parameter]
+  414 | void ggml_vec_dot_i2_i8_s_1x4_32W(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                            ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:414:116: warning: unused parameter 'by' [-Wunused-parameter]
+  414 | void ggml_vec_dot_i2_i8_s_1x4_32W(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                                                                                    ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:414:6: warning: no previous prototype for function 'ggml_vec_dot_i2_i8_s_1x4_32W' [-Wmissing-prototypes]
+  414 | void ggml_vec_dot_i2_i8_s_1x4_32W(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:414:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  414 | void ggml_vec_dot_i2_i8_s_1x4_32W(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      | ^
+      | static 
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:514:39: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  514 |     const uint8_t *    x = (uint8_t *)vx;
+      |                                       ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:515:38: warning: cast from 'const void *' to 'signed char *' drops const qualifier [-Wcast-qual]
+  515 |     const int8_t  *    y = (int8_t *)vy;
+      |                                      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:512:56: warning: unused parameter 'bs' [-Wunused-parameter]
+  512 | void ggml_vec_dot_i2_i8_s_1xN(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                        ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:512:112: warning: unused parameter 'by' [-Wunused-parameter]
+  512 | void ggml_vec_dot_i2_i8_s_1xN(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                                                                                ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:512:6: warning: no previous prototype for function 'ggml_vec_dot_i2_i8_s_1xN' [-Wmissing-prototypes]
+  512 | void ggml_vec_dot_i2_i8_s_1xN(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:512:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  512 | void ggml_vec_dot_i2_i8_s_1xN(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      | ^
+      | static 
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:793:39: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  793 |     const uint8_t *    x = (uint8_t *)vx;
+      |                                       ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:794:38: warning: cast from 'const void *' to 'signed char *' drops const qualifier [-Wcast-qual]
+  794 |     const int8_t  *    y = (int8_t *)vy;
+      |                                      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:791:84: warning: unused parameter 'bx' [-Wunused-parameter]
+  791 | void ggml_vec_dot_i2_i8_s_Nx1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |                                                                                    ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:791:6: warning: no previous prototype for function 'ggml_vec_dot_i2_i8_s_Nx1' [-Wmissing-prototypes]
+  791 | void ggml_vec_dot_i2_i8_s_Nx1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      |      ^
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/src/ggml-bitnet-mad.cpp:791:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+  791 | void ggml_vec_dot_i2_i8_s_Nx1(int n, float * s, size_t bs, const void * vx, size_t bx, const void * vy, size_t by, int nrc) {
+      | ^
+      | static 
+20 warnings generated.
+[55/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-sampler.cpp.obj
+[56/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-mmap.cpp.obj
+[57/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-vocab.cpp.obj
+[58/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/unicode-data.cpp.obj
+[59/406] Linking CXX static library 3rdparty\llama.cpp\ggml\src\ggml-cpu.a
+[60/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/afmoe.cpp.obj
+[61/406] Linking CXX static library 3rdparty\llama.cpp\ggml\src\ggml.a
+[62/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/apertus.cpp.obj
+[63/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/unicode.cpp.obj
+[64/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/arcee.cpp.obj
+[65/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/arctic.cpp.obj
+[66/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/bailingmoe2.cpp.obj
+[67/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/arwkv7.cpp.obj
+[68/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/baichuan.cpp.obj
+[69/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/bailingmoe.cpp.obj
+[70/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/bert.cpp.obj
+[71/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/bitnet.cpp.obj
+[72/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/chameleon.cpp.obj
+[73/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/bloom.cpp.obj
+[74/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/chatglm.cpp.obj
+[75/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/codeshell.cpp.obj
+[76/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/cogvlm.cpp.obj
+[77/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/cohere2moe.cpp.obj
+[78/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/cohere2.cpp.obj
+[79/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/dbrx.cpp.obj
+[80/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/command-r.cpp.obj
+[81/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/deci.cpp.obj
+[82/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/delta-net-base.cpp.obj
+[83/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek2ocr.cpp.obj
+[84/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek.cpp.obj
+[85/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek32.cpp.obj
+[86/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek2.cpp.obj
+[87/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/dflash.cpp.obj
+[88/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/dots1.cpp.obj
+[89/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/dream.cpp.obj
+[90/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/eurobert.cpp.obj
+[91/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/eagle3.cpp.obj
+[92/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/exaone-moe.cpp.obj
+[93/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/ernie4-5-moe.cpp.obj
+[94/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/exaone.cpp.obj
+[95/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/ernie4-5.cpp.obj
+[96/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/exaone4.cpp.obj
+[97/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek4.cpp.obj
+[98/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/falcon-h1.cpp.obj
+[99/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma.cpp.obj
+[100/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma-embedding.cpp.obj
+[101/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/falcon.cpp.obj
+[102/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma2.cpp.obj
+[103/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma3.cpp.obj
+[104/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma3n.cpp.obj
+[105/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma4-assistant.cpp.obj
+[106/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gptneox.cpp.obj
+[107/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/glm-dsa.cpp.obj
+[108/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gemma4.cpp.obj
+[109/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/granite-hybrid.cpp.obj
+[110/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/glm4.cpp.obj
+[111/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/granite.cpp.obj
+[112/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/granite-moe.cpp.obj
+[113/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/glm4-moe.cpp.obj
+[114/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/gpt2.cpp.obj
+[115/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/grok.cpp.obj
+[116/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/grovemoe.cpp.obj
+[117/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/hunyuan-dense.cpp.obj
+[118/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/hunyuan-vl.cpp.obj
+[119/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/internlm2.cpp.obj
+[120/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/hunyuan-moe.cpp.obj
+[121/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/jais.cpp.obj
+[122/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/jais2.cpp.obj
+[123/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/jina-bert-v3.cpp.obj
+[124/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/jamba.cpp.obj
+[125/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/llada-moe.cpp.obj
+[126/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/llama-embed.cpp.obj
+[127/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/jina-bert-v2.cpp.obj
+[128/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/llada.cpp.obj
+[129/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/kimi-linear.cpp.obj
+[130/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/lfm2moe.cpp.obj
+[131/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/lfm2.cpp.obj
+[132/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/llama-model-loader.cpp.obj
+[133/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/llama4.cpp.obj
+[134/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/llama.cpp.obj
+[135/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mamba-base.cpp.obj
+[136/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/maincoder.cpp.obj
+[137/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mamba.cpp.obj
+[138/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mellum.cpp.obj
+[139/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mamba2.cpp.obj
+[140/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mimo2.cpp.obj
+[141/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/minicpm.cpp.obj
+[142/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/minicpm3.cpp.obj
+[143/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/minimax-m2.cpp.obj
+[144/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mistral3.cpp.obj
+[145/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mistral4.cpp.obj
+[146/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/nemotron-h.cpp.obj
+[147/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/modern-bert.cpp.obj
+[148/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/nemotron-h-moe.cpp.obj
+[149/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/nomic-bert.cpp.obj
+[150/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/olmo2.cpp.obj
+[151/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/mpt.cpp.obj
+[152/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/nemotron.cpp.obj
+[153/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/olmoe.cpp.obj
+[154/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/olmo.cpp.obj
+[155/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/openai-moe.cpp.obj
+[156/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/openelm.cpp.obj
+[157/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/nomic-bert-moe.cpp.obj
+[158/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/neo-bert.cpp.obj
+[159/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/orion.cpp.obj
+[160/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/paddleocr.cpp.obj
+[161/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/pangu-embed.cpp.obj
+[162/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/phimoe.cpp.obj
+[163/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/phi2.cpp.obj
+[164/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/phi3.cpp.obj
+[165/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/plamo3.cpp.obj
+[166/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/plamo.cpp.obj
+[167/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/plamo2.cpp.obj
+[168/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen2.cpp.obj
+[169/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/plm.cpp.obj
+[170/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen.cpp.obj
+[171/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen2moe.cpp.obj
+[172/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3.cpp.obj
+[173/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen2vl.cpp.obj
+[174/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen35.cpp.obj
+[175/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3next.cpp.obj
+[176/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3moe.cpp.obj
+[177/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3vl.cpp.obj
+[178/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3vlmoe.cpp.obj
+[179/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/qwen35moe.cpp.obj
+[180/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/rnd1.cpp.obj
+[181/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/refact.cpp.obj
+[182/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv6-base.cpp.obj
+[183/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv6.cpp.obj
+[184/406] Linking CXX executable 3rdparty\llama.cpp\tools\ui\llama-ui-embed.exe
+[185/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv7-base.cpp.obj
+[186/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/seed-oss.cpp.obj
+[187/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/smallthinker.cpp.obj
+[188/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv6qwen2.cpp.obj
+[189/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv7.cpp.obj
+[190/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/stablelm.cpp.obj
+[191/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/step35.cpp.obj
+[192/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/starcoder.cpp.obj
+[193/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/smollm3.cpp.obj
+[194/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common-base.dir/build-info.cpp.obj
+[195/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/starcoder2.cpp.obj
+[196/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/xverse.cpp.obj
+[197/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/t5.cpp.obj
+[198/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/talkie.cpp.obj
+[199/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/t5encoder.cpp.obj
+[200/406] Linking CXX static library 3rdparty\llama.cpp\common\libllama-common-base.a
+[201/406] Building CXX object 3rdparty/llama.cpp/src/CMakeFiles/llama.dir/models/wavtokenizer-dec.cpp.obj
+[202/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/chat-auto-parser-helpers.cpp.obj
+[203/406] Linking CXX static library 3rdparty\llama.cpp\src\libllama.a
+[204/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/chat-diff-analyzer.cpp.obj
+[205/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/arg.cpp.obj
+[206/406] Building CXX object 3rdparty/llama.cpp/vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/httplib.cpp.obj
+[207/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/chat.cpp.obj
+[208/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/chat-peg-parser.cpp.obj
+[209/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/fit.cpp.obj
+[210/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/debug.cpp.obj
+[211/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/imatrix-loader.cpp.obj
+[212/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/common.cpp.obj
+[213/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/console.cpp.obj
+[214/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/llguidance.cpp.obj
+[215/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/chat-auto-parser-generator.cpp.obj
+[216/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/ngram-mod.cpp.obj
+[217/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/ngram-cache.cpp.obj
+[218/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/hf-cache.cpp.obj
+[219/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/ngram-map.cpp.obj
+[220/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/log.cpp.obj
+[221/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/preset.cpp.obj
+[222/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/json-schema-to-grammar.cpp.obj
+[223/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/download.cpp.obj
+[224/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/unicode.cpp.obj
+[225/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/sampling.cpp.obj
+[226/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/reasoning-budget.cpp.obj
+[227/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/peg-parser.cpp.obj
+[228/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/speculative.cpp.obj
+[229/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/jinja/parser.cpp.obj
+[230/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/jinja/lexer.cpp.obj
+[231/406] Linking CXX static library 3rdparty\llama.cpp\vendor\cpp-httplib\libcpp-httplib.a
+[232/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/jinja/value.cpp.obj
+[233/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/jinja/runtime.cpp.obj
+[234/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/jinja/string.cpp.obj
+[235/406] Building CXX object 3rdparty/llama.cpp/common/CMakeFiles/llama-common.dir/jinja/caps.cpp.obj
+[236/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-audio.cpp.obj
+[237/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-helper.cpp.obj
+[238/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/mtmd.cpp.obj
+[239/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-image.cpp.obj
+[240/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/cogvlm.cpp.obj
+[241/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/clip.cpp.obj
+[242/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/dotsocr.cpp.obj
+[243/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/conformer.cpp.obj
+[244/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4a.cpp.obj
+[245/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4v.cpp.obj
+[246/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4uv.cpp.obj
+[247/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/granite4-vision.cpp.obj
+[248/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/granite-speech.cpp.obj
+[249/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/exaone4_5.cpp.obj
+[250/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/internvl.cpp.obj
+[251/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4ua.cpp.obj
+[252/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/hunyuanvl.cpp.obj
+[253/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/kimik25.cpp.obj
+[254/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/minicpmv.cpp.obj
+[255/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/kimivl.cpp.obj
+[256/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/glm4v.cpp.obj
+[257/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/llama4.cpp.obj
+[258/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/llava.cpp.obj
+[259/406] Linking CXX static library 3rdparty\llama.cpp\common\libllama-common.a
+[260/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/paddleocr.cpp.obj
+[261/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/nemotron-v2-vl.cpp.obj
+[262/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3vl.cpp.obj
+[263/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/pixtral.cpp.obj
+[264/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3a.cpp.obj
+[265/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen2vl.cpp.obj
+[266/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/mimovl.cpp.obj
+[267/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/siglip.cpp.obj
+[268/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr.cpp.obj
+[269/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-chat.cpp.obj
+[270/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr2.cpp.obj
+[271/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-queue.cpp.obj
+[272/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-task.cpp.obj
+[273/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-stream.cpp.obj
+[274/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/mobilenetv5.cpp.obj
+[275/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/step3vl.cpp.obj
+[276/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-common.cpp.obj
+[277/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/yasa2.cpp.obj
+[278/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/youtuvl.cpp.obj
+[279/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/mtmd.dir/models/whisper-enc.cpp.obj
+[280/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-schema.cpp.obj
+[281/406] Building CXX object 3rdparty/llama.cpp/examples/diffusion/CMakeFiles/llama-diffusion.dir/diffusion.cpp.obj
+[282/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-tools.cpp.obj
+[283/406] Building C object 3rdparty/llama.cpp/examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.obj
+[284/406] Building C object 3rdparty/llama.cpp/examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.obj
+[285/406] Building CXX object 3rdparty/llama.cpp/tools/batched-bench/CMakeFiles/llama-batched-bench-impl.dir/batched-bench.cpp.obj
+[286/406] Linking CXX static library 3rdparty\llama.cpp\tools\mtmd\libmtmd.a
+[287/406] Building C object 3rdparty/llama.cpp/examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.obj
+[288/406] Building CXX object 3rdparty/llama.cpp/tools/llama-bench/CMakeFiles/llama-bench-impl.dir/llama-bench.cpp.obj
+[289/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/server-context.dir/server-context.cpp.obj
+[290/406] Building CXX object 3rdparty/llama.cpp/examples/embedding/CMakeFiles/llama-embedding.dir/embedding.cpp.obj
+[291/406] Building CXX object 3rdparty/llama.cpp/tools/quantize/CMakeFiles/llama-quantize-impl.dir/quantize.cpp.obj
+[292/406] Building CXX object 3rdparty/llama.cpp/tools/perplexity/CMakeFiles/llama-perplexity-impl.dir/perplexity.cpp.obj
+[293/406] Building CXX object 3rdparty/llama.cpp/examples/batched/CMakeFiles/llama-batched.dir/batched.cpp.obj
+[294/406] Linking CXX static library 3rdparty\llama.cpp\tools\server\libserver-context.a
+[295/406] Building CXX object 3rdparty/llama.cpp/examples/eval-callback/CMakeFiles/llama-eval-callback.dir/eval-callback.cpp.obj
+[296/406] Building CXX object 3rdparty/llama.cpp/examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.obj
+[297/406] Building CXX object 3rdparty/llama.cpp/tools/fit-params/CMakeFiles/llama-fit-params-impl.dir/fit-params.cpp.obj
+[298/406] Building CXX object 3rdparty/llama.cpp/examples/debug/CMakeFiles/llama-debug.dir/debug.cpp.obj
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/examples/debug/debug.cpp:112:35: warning: format specifies type 'char *' but the argument has type 'const value_type *' (aka 'const wchar_t *') [-Wformat]
+  112 |         LOG("Data saved to %s\n", filepath.c_str());
+      |                            ~~     ^~~~~~~~~~~~~~~~
+      |                            %ls
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:111:78: note: expanded from macro 'LOG'
+  111 | #define LOG(...)             LOG_TMPL(GGML_LOG_LEVEL_NONE, LOG_LEVEL_OUTPUT, __VA_ARGS__)
+      |                                                                              ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:107:56: note: expanded from macro 'LOG_TMPL'
+  107 |             common_log_add(common_log_main(), (level), __VA_ARGS__); \
+      |                                                        ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/examples/debug/debug.cpp:125:35: warning: format specifies type 'char *' but the argument has type 'const value_type *' (aka 'const wchar_t *') [-Wformat]
+  125 |         LOG("Data saved to %s\n", filepath.c_str());
+      |                            ~~     ^~~~~~~~~~~~~~~~
+      |                            %ls
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:111:78: note: expanded from macro 'LOG'
+  111 | #define LOG(...)             LOG_TMPL(GGML_LOG_LEVEL_NONE, LOG_LEVEL_OUTPUT, __VA_ARGS__)
+      |                                                                              ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:107:56: note: expanded from macro 'LOG_TMPL'
+  107 |             common_log_add(common_log_main(), (level), __VA_ARGS__); \
+      |                                                        ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/examples/debug/debug.cpp:147:37: warning: format specifies type 'char *' but the argument has type 'const value_type *' (aka 'const wchar_t *') [-Wformat]
+  147 |         LOG("Prompt saved to %s\n", filepath.c_str());
+      |                              ~~     ^~~~~~~~~~~~~~~~
+      |                              %ls
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:111:78: note: expanded from macro 'LOG'
+  111 | #define LOG(...)             LOG_TMPL(GGML_LOG_LEVEL_NONE, LOG_LEVEL_OUTPUT, __VA_ARGS__)
+      |                                                                              ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:107:56: note: expanded from macro 'LOG_TMPL'
+  107 |             common_log_add(common_log_main(), (level), __VA_ARGS__); \
+      |                                                        ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/examples/debug/debug.cpp:158:37: warning: format specifies type 'char *' but the argument has type 'const value_type *' (aka 'const wchar_t *') [-Wformat]
+  158 |         LOG("Tokens saved to %s\n", filepath.c_str());
+      |                              ~~     ^~~~~~~~~~~~~~~~
+      |                              %ls
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:111:78: note: expanded from macro 'LOG'
+  111 | #define LOG(...)             LOG_TMPL(GGML_LOG_LEVEL_NONE, LOG_LEVEL_OUTPUT, __VA_ARGS__)
+      |                                                                              ^~~~~~~~~~~
+C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/common/./log.h:107:56: note: expanded from macro 'LOG_TMPL'
+  107 |             common_log_add(common_log_main(), (level), __VA_ARGS__); \
+      |                                                        ^~~~~~~~~~~
+4 warnings generated.
+[299/406] Building CXX object 3rdparty/llama.cpp/examples/gguf/CMakeFiles/llama-gguf.dir/gguf.cpp.obj
+[300/406] Building CXX object 3rdparty/llama.cpp/examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.obj
+[301/406] Building CXX object 3rdparty/llama.cpp/tools/completion/CMakeFiles/llama-completion-impl.dir/completion.cpp.obj
+[302/406] Building CXX object 3rdparty/llama.cpp/tools/cli/CMakeFiles/llama-cli-impl.dir/cli.cpp.obj
+[303/406] Building CXX object 3rdparty/llama.cpp/examples/idle/CMakeFiles/llama-idle.dir/idle.cpp.obj
+[304/406] Building CXX object 3rdparty/llama.cpp/examples/lookahead/CMakeFiles/llama-lookahead.dir/lookahead.cpp.obj
+[305/406] Building CXX object 3rdparty/llama.cpp/examples/parallel/CMakeFiles/llama-parallel.dir/parallel.cpp.obj
+[306/406] Linking CXX static library 3rdparty\llama.cpp\examples\diffusion\libllama-diffusion.a
+[307/406] Building CXX object 3rdparty/llama.cpp/examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.obj
+[308/406] Building CXX object 3rdparty/llama.cpp/examples/retrieval/CMakeFiles/llama-retrieval.dir/retrieval.cpp.obj
+[309/406] Building CXX object 3rdparty/llama.cpp/tools/batched-bench/CMakeFiles/llama-batched-bench.dir/main.cpp.obj
+[310/406] Building CXX object 3rdparty/llama.cpp/examples/simple-chat/CMakeFiles/llama-simple-chat.dir/simple-chat.cpp.obj
+[311/406] Building CXX object 3rdparty/llama.cpp/examples/passkey/CMakeFiles/llama-passkey.dir/passkey.cpp.obj
+[312/406] Building CXX object 3rdparty/llama.cpp/examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.obj
+[313/406] Linking CXX static library 3rdparty\llama.cpp\tools\batched-bench\libllama-batched-bench-impl.a
+[314/406] Building CXX object 3rdparty/llama.cpp/examples/speculative-simple/CMakeFiles/llama-speculative-simple.dir/speculative-simple.cpp.obj
+[315/406] Building CXX object 3rdparty/llama.cpp/tools/completion/CMakeFiles/llama-completion.dir/main.cpp.obj
+[316/406] Linking CXX static library 3rdparty\llama.cpp\tools\perplexity\libllama-perplexity-impl.a
+[317/406] Building CXX object 3rdparty/llama.cpp/examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.obj
+[318/406] Building CXX object 3rdparty/llama.cpp/examples/gen-docs/CMakeFiles/llama-gen-docs.dir/gen-docs.cpp.obj
+[319/406] Building CXX object 3rdparty/llama.cpp/examples/simple/CMakeFiles/llama-simple.dir/simple.cpp.obj
+[320/406] Building CXX object 3rdparty/llama.cpp/tools/perplexity/CMakeFiles/llama-perplexity.dir/main.cpp.obj
+[321/406] Building CXX object 3rdparty/llama.cpp/examples/diffusion/CMakeFiles/llama-diffusion-cli.dir/diffusion-cli.cpp.obj
+[322/406] Building CXX object 3rdparty/llama.cpp/tools/llama-bench/CMakeFiles/llama-bench.dir/main.cpp.obj
+[323/406] Linking CXX static library 3rdparty\llama.cpp\tools\llama-bench\libllama-bench-impl.a
+[324/406] Building CXX object 3rdparty/llama.cpp/pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.obj
+[325/406] Linking CXX static library 3rdparty\llama.cpp\tools\completion\libllama-completion-impl.a
+[326/406] Building CXX object 3rdparty/llama.cpp/tools/quantize/CMakeFiles/llama-quantize.dir/main.cpp.obj
+[327/406] Building CXX object 3rdparty/llama.cpp/examples/training/CMakeFiles/llama-finetune.dir/finetune.cpp.obj
+[328/406] Building CXX object 3rdparty/llama.cpp/examples/speculative/CMakeFiles/llama-speculative.dir/speculative.cpp.obj
+[329/406] Linking CXX static library 3rdparty\llama.cpp\tools\cli\libllama-cli-impl.a
+[330/406] Linking CXX static library 3rdparty\llama.cpp\tools\quantize\libllama-quantize-impl.a
+[331/406] Building CXX object 3rdparty/llama.cpp/examples/convert-llama2c-to-ggml/CMakeFiles/llama-convert-llama2c-to-ggml.dir/convert-llama2c-to-ggml.cpp.obj
+[332/406] Building CXX object 3rdparty/llama.cpp/pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.obj
+[333/406] Building CXX object 3rdparty/llama.cpp/tools/cli/CMakeFiles/llama-cli.dir/main.cpp.obj
+[334/406] Building CXX object 3rdparty/llama.cpp/tools/fit-params/CMakeFiles/llama-fit-params.dir/main.cpp.obj
+[335/406] Linking CXX static library 3rdparty\llama.cpp\tools\fit-params\libllama-fit-params-impl.a
+[336/406] Building CXX object 3rdparty/llama.cpp/tools/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.obj
+[337/406] Building CXX object 3rdparty/llama.cpp/tools/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.obj
+[338/406] Linking CXX executable bin\llama-batched.exe
+[339/406] Linking CXX executable bin\llama-debug.exe
+[340/406] Linking CXX executable bin\llama-embedding.exe
+[341/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.obj
+[342/406] Linking CXX executable bin\llama-eval-callback.exe
+[343/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.obj
+[344/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.obj
+[345/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/llama-qwen2vl-cli.dir/deprecation-warning.cpp.obj
+[346/406] Building CXX object 3rdparty/llama.cpp/tools/export-lora/CMakeFiles/llama-export-lora.dir/export-lora.cpp.obj
+[347/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/llama-mtmd-debug.dir/debug/mtmd-debug.cpp.obj
+[348/406] Building CXX object 3rdparty/llama.cpp/tools/results/CMakeFiles/llama-results.dir/results.cpp.obj
+[349/406] Linking CXX executable bin\llama-gguf.exe
+[350/406] Building CXX object 3rdparty/llama.cpp/tools/tts/CMakeFiles/llama-tts.dir/tts.cpp.obj
+[351/406] Linking CXX executable bin\llama-gguf-hash.exe
+[352/406] Linking CXX executable bin\llama-lookahead.exe
+[353/406] Building CXX object 3rdparty/llama.cpp/tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/cvector-generator.cpp.obj
+[354/406] Linking CXX executable bin\llama-lookup.exe
+[355/406] Building CXX object 3rdparty/llama.cpp/tools/parser/CMakeFiles/llama-debug-template-parser.dir/debug-template-parser.cpp.obj
+[356/406] Linking CXX executable bin\llama-idle.exe
+[357/406] Linking CXX executable bin\llama-lookup-create.exe
+[358/406] Building CXX object 3rdparty/llama.cpp/tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/mtmd-cli.cpp.obj
+[359/406] Linking CXX executable bin\llama-lookup-stats.exe
+[360/406] Linking CXX executable bin\llama-parallel.exe
+[361/406] Building CXX object 3rdparty/llama.cpp/tools/tokenize/CMakeFiles/llama-tokenize.dir/tokenize.cpp.obj
+[362/406] Building CXX object 3rdparty/llama.cpp/tools/parser/CMakeFiles/llama-template-analysis.dir/template-analysis.cpp.obj
+[363/406] Linking CXX executable bin\llama-simple-chat.exe
+[364/406] Linking CXX executable bin\llama-simple.exe
+[365/406] Linking CXX executable bin\llama-lookup-merge.exe
+[366/406] Linking CXX executable bin\llama-retrieval.exe
+[367/406] Linking CXX executable bin\llama-passkey.exe
+[368/406] Linking CXX executable bin\llama-speculative.exe
+[369/406] Linking CXX executable bin\llama-speculative-simple.exe
+[370/406] Linking CXX executable bin\llama-convert-llama2c-to-ggml.exe
+[371/406] Linking CXX executable bin\llama-gguf-split.exe
+[372/406] Linking CXX executable bin\llama-vdot.exe
+[373/406] Linking CXX executable bin\llama-gen-docs.exe
+[374/406] Linking CXX executable bin\llama-finetune.exe
+[375/406] Linking CXX executable bin\llama-completion.exe
+[376/406] Linking CXX executable bin\llama-bench.exe
+[377/406] Linking CXX executable bin\llama-perplexity.exe
+[378/406] Linking CXX executable bin\llama-q8dot.exe
+[379/406] Linking CXX executable bin\llama-batched-bench.exe
+[380/406] Linking CXX executable bin\llama-imatrix.exe
+[381/406] Linking CXX executable bin\llama-quantize.exe
+[382/406] Linking CXX executable bin\llama-diffusion-cli.exe
+[383/406] Linking CXX executable bin\llama-tokenize.exe
+[384/406] Linking CXX executable bin\llama-template-analysis.exe
+[385/406] Linking CXX executable bin\llama-cli.exe
+[386/406] Linking CXX executable bin\llama-gemma3-cli.exe
+[387/406] Linking CXX executable bin\llama-tts.exe
+[388/406] Linking CXX executable bin\llama-debug-template-parser.exe
+[389/406] Linking CXX executable bin\llama-qwen2vl-cli.exe
+[390/406] Linking CXX executable bin\llama-minicpmv-cli.exe
+[391/406] Linking CXX executable bin\llama-mtmd-cli.exe
+[392/406] Linking CXX executable bin\llama-export-lora.exe
+[393/406] Linking CXX executable bin\llama-mtmd-debug.exe
+[394/406] Linking CXX executable bin\llama-llava-cli.exe
+[395/406] Linking CXX executable bin\llama-cvector-generator.exe
+[396/406] Linking CXX executable bin\llama-results.exe
+[397/406] Linking CXX executable bin\llama-fit-params.exe
+[398/406] Provisioning UI assets
+-- UI: running npm install
+
+added 1030 packages, and audited 1031 packages in 57s
+
+347 packages are looking for funding
+  run `npm fund` for details
+
+26 vulnerabilities (3 low, 8 moderate, 10 high, 5 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+-- UI: running npm run build, output -> C:/Users/gerso/Desktop/TBC/third_party/BitNet/build/3rdparty/llama.cpp/tools/ui/dist
+
+> llama-ui@1.0.0 build
+> npm run build-pwa-assets && vite build
+
+
+> llama-ui@1.0.0 build-pwa-assets
+> npx @vite-pwa/assets-generator --root . --config pwa-assets.config.ts && npx @vite-pwa/assets-generator --root . --config pwa-assets-dark.config.ts && node scripts/make-icons-circular.js
+
+Zero Config PWA Assets Generator v1.0.2
+o Preparing to generate PWA assets...
+o Resolving instructions...
+ÔêÜ PWA assets ready to be generated, instructions resolved
+o Generating PWA assets from static/favicon.svg image
+o Generating assets for static/favicon.svg...
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\pwa-64x64.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\pwa-192x192.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\pwa-512x512.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\maskable-icon-512x512.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-touch-icon-180x180.png
+ÔêÜ Generated ICO file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\favicon.ico
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1170x2532.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2532x1170.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1284x2778.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2778x1284.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1179x2556.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2796x1290.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1206x2622.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1290x2796.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-640x1136.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2556x1179.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-1136x640.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2622x1206.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-750x1334.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-1334x750.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1320x2868.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2868x1320.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1640x2360.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2360x1640.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-2048x2732.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2732x2048.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1668x2388.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2388x1668.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2532x1170.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-1488x2266.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-2266x1488.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1284x2778.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1170x2532.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2556x1179.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1179x2556.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2778x1284.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1290x2796.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1206x2622.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-1136x640.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-640x1136.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2622x1206.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2796x1290.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-750x1334.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-1334x750.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1320x2868.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2868x1320.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1640x2360.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2360x1640.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-2048x2732.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2732x2048.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1668x2388.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2388x1668.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-portrait-dark-1488x2266.png
+ÔêÜ Generated PNG file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\apple-splash-landscape-dark-2266x1488.png
+ÔêÜ Assets generated for static/favicon.svg
+o Generating Html Head Links...
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-1170x2532.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-2532x1170.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-dark-1170x2532.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-dark-2532x1170.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-1284x2778.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-2778x1284.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-dark-1284x2778.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-dark-2778x1284.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-1179x2556.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-2556x1179.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-dark-1179x2556.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-dark-2556x1179.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-1290x2796.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-2796x1290.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-dark-1290x2796.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-dark-2796x1290.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-1206x2622.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-2622x1206.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-dark-1206x2622.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-dark-2622x1206.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-1320x2868.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-2868x1320.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="./apple-splash-portrait-dark-1320x2868.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="./apple-splash-landscape-dark-2868x1320.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-640x1136.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-1136x640.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-dark-640x1136.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-dark-1136x640.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-750x1334.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-1334x750.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-dark-750x1334.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-dark-1334x750.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-1640x2360.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-2360x1640.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-dark-1640x2360.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-dark-2360x1640.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-2048x2732.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-2732x2048.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-dark-2048x2732.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-dark-2732x2048.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-1668x2388.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-2388x1668.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-dark-1668x2388.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-dark-2388x1668.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-1488x2266.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-2266x1488.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./apple-splash-portrait-dark-1488x2266.png">
+<link rel="apple-touch-startup-image" media="screen and (prefers-color-scheme: dark) and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="./apple-splash-landscape-dark-2266x1488.png">
+ÔêÜ Html Head Links generated
+o Generating PWA web manifest icons entry...
+{
+  "icons": [
+    {
+      "src": "pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
+ÔêÜ PWA web manifest icons entry generated
+ÔêÜ PWA assets generated
+Zero Config PWA Assets Generator v1.0.2
+o Preparing to generate PWA assets...
+o Resolving instructions...
+ÔêÜ PWA assets ready to be generated, instructions resolved
+o Generating PWA assets from static/favicon-dark.svg image
+o Generating assets for static/favicon-dark.svg...
+ÔêÜ Generated ICO file: C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\ui-src\static\favicon-dark.ico
+ÔêÜ Assets generated for static/favicon-dark.svg
+o Generating Html Head Links...
+<link rel="icon" href="/favicon-dark.ico" sizes="48x48">
+<link rel="icon" href="/favicon-dark.svg" sizes="any" type="image/svg+xml">
+ÔêÜ Html Head Links generated
+o Generating PWA web manifest icons entry...
+{
+  "icons": []
+}
+ÔêÜ PWA web manifest icons entry generated
+ÔêÜ PWA assets generated
+Circular mask: 0% padding, 85% scale, source=maskable-icon-512x512.png
+
+Ô£ô pwa-64x64.png ÔåÆ circle from maskable-icon-512x512.png, 0% padding (size=64, r=32, scale=85%, circleDiameter=64)
+Ô£ô pwa-192x192.png ÔåÆ circle from maskable-icon-512x512.png, 0% padding (size=192, r=96, scale=85%, circleDiameter=192)
+Ô£ô pwa-512x512.png ÔåÆ circle from maskable-icon-512x512.png, 0% padding (size=512, r=256, scale=85%, circleDiameter=512)
+
+Unchanged:
+  maskable-icon-512x512.png (1894 bytes)
+  apple-touch-icon-180x180.png (806 bytes)
+vite v7.3.5 building ssr environment for production...
+transforming...
+Ô£ô 4857 modules transformed.
+rendering chunks...
+vite v7.3.5 building client environment for production...
+transforming...
+Ô£ô 7925 modules transformed.
+rendering chunks...
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                              0.03 kB Ôöé gzip:     0.05 kB
+.svelte-kit/output/client/.vite/manifest.json                            0.30 kB Ôöé gzip:     0.18 kB
+.svelte-kit/output/client/manifest.webmanifest                           0.52 kB
+.svelte-kit/output/client/_app/immutable/assets/bundle.BYYeJ5JL.css    513.45 kB Ôöé gzip:   289.55 kB
+.svelte-kit/output/client/_app/immutable/bundle.BdFenJ95.js          8,198.16 kB Ôöé gzip: 2,382.78 kB
+Ô£ô built in 1m 16s
+Relativized base refs in index.html and sw.js
+.svelte-kit/output/server/.vite/manifest.json                                                         14.87 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.CV-KWLNP.css                                     0.29 kB
+.svelte-kit/output/server/_app/immutable/assets/DialogConfirmation.bHHIbcsu.css                        0.35 kB
+.svelte-kit/output/server/_app/immutable/assets/_layout.MU2eieL3.css                                 126.37 kB
+.svelte-kit/output/server/_app/immutable/assets/SidebarNavigationConversationItem.CKjmUAOs.css       385.97 kB
+.svelte-kit/output/server/chunks/app.js                                                                0.07 kB
+.svelte-kit/output/server/chunks/environment.js                                                        0.07 kB
+.svelte-kit/output/server/chunks/api-key-validation.js                                                 0.19 kB
+.svelte-kit/output/server/chunks/server.js                                                             0.20 kB
+.svelte-kit/output/server/chunks/device.svelte.js                                                      0.22 kB
+.svelte-kit/output/server/entries/pages/(chat)/_page.ts.js                                             0.29 kB
+.svelte-kit/output/server/entries/pages/(chat)/chat/_id_/_page.ts.js                                   0.31 kB
+.svelte-kit/output/server/chunks/arrow-right.js                                                        0.31 kB
+.svelte-kit/output/server/internal.js                                                                  0.37 kB
+.svelte-kit/output/server/chunks/dialog-title.js                                                       0.57 kB
+.svelte-kit/output/server/chunks/utils2.js                                                             0.60 kB
+.svelte-kit/output/server/entries/pages/settings/_layout.svelte.js                                     0.88 kB
+.svelte-kit/output/server/chunks/alert-dialog-action.js                                                0.93 kB
+.svelte-kit/output/server/entries/pages/(chat)/_page.svelte.js                                         1.13 kB
+.svelte-kit/output/server/entries/pages/(chat)/chat/_id_/_page.svelte.js                               1.23 kB
+.svelte-kit/output/server/chunks/ActionIcon.js                                                         1.44 kB
+.svelte-kit/output/server/chunks/exports.js                                                            1.46 kB
+.svelte-kit/output/server/chunks/url.js                                                                1.60 kB
+.svelte-kit/output/server/chunks/input.js                                                              1.66 kB
+.svelte-kit/output/server/chunks/render-context.js                                                     1.81 kB
+.svelte-kit/output/server/entries/pages/search/_page.svelte.js                                         1.98 kB
+.svelte-kit/output/server/chunks/label.js                                                              2.23 kB
+.svelte-kit/output/server/chunks/McpServerIdentity.js                                                  2.54 kB
+.svelte-kit/output/server/chunks/TruncatedText.js                                                      2.71 kB
+.svelte-kit/output/server/chunks/DialogModelNotAvailable.js                                            2.78 kB
+.svelte-kit/output/server/chunks/internal.js                                                           2.88 kB
+.svelte-kit/output/server/chunks/SidebarNavigationSearchResults.js                                     4.40 kB
+.svelte-kit/output/server/chunks/index.js                                                              4.51 kB
+.svelte-kit/output/server/entries/pages/mcp-servers/_page.svelte.js                                    5.03 kB
+.svelte-kit/output/server/chunks/dialog-footer.js                                                      5.69 kB
+.svelte-kit/output/server/chunks/index3.js                                                             5.72 kB
+.svelte-kit/output/server/chunks/workbox-window.prod.es5.js                                            5.75 kB
+.svelte-kit/output/server/chunks/KeyValuePairs.js                                                      6.54 kB
+.svelte-kit/output/server/entries/pages/_error.svelte.js                                               8.52 kB
+.svelte-kit/output/server/remote-entry.js                                                             14.02 kB
+.svelte-kit/output/server/chunks/utils.js                                                             15.12 kB
+.svelte-kit/output/server/chunks/popper-layer-force-mount.js                                          15.45 kB
+.svelte-kit/output/server/chunks/models.svelte.js                                                     17.20 kB
+.svelte-kit/output/server/chunks/index2.js                                                            21.71 kB
+.svelte-kit/output/server/chunks/root.js                                                              40.18 kB
+.svelte-kit/output/server/chunks/DialogConfirmation.js                                                41.73 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js                                             41.83 kB
+.svelte-kit/output/server/chunks/url2.js                                                              53.54 kB
+.svelte-kit/output/server/index.js                                                                    57.10 kB
+.svelte-kit/output/server/entries/pages/settings/__section__/_page.svelte.js                          67.87 kB
+.svelte-kit/output/server/chunks/chat.svelte.js                                                       69.96 kB
+.svelte-kit/output/server/chunks/SidebarNavigationConversationItem.svelte_svelte_type_style_lang.js  158.41 kB
+.svelte-kit/output/server/entries/pages/(chat)/_layout.svelte.js                                     268.18 kB
+Ô£ô built in 2m 35s
+
+PWA v1.3.0
+mode      generateSW
+precache  62 entries (8722.73 KiB)
+files generated
+  .svelte-kit/output/server/sw.js
+  .svelte-kit/output/server/workbox-b3c04f83.js
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+Overwriting C:\Users\gerso\Desktop\TBC\third_party\BitNet\build\3rdparty\llama.cpp\tools\ui\dist\index.html with fallback page. Consider using a different name for the fallback.
+  Wrote site to "C:/Users/gerso/Desktop/TBC/third_party/BitNet/build/3rdparty/llama.cpp/tools/ui/dist"
+  Ô£ö done
+Generated 48 apple-splash link tags
+Updated index.html
+Created build.json (version: 1)
+Relativized base refs in index.html and sw.js
+-- UI: npm build succeeded
+CMake Warning at C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/scripts/ui-assets.cmake:254 (message):
+  UI: LLAMA_UI_GZIP requested but gzip not found, embedding uncompressed
+Call Stack (most recent call first):
+  C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp/scripts/ui-assets.cmake:361 (emit_files)
+
+
+embed: write output file C:/Users/gerso/Desktop/TBC/third_party/BitNet/build/3rdparty/llama.cpp/tools/ui/ui.h
+embed: write output file C:/Users/gerso/Desktop/TBC/third_party/BitNet/build/3rdparty/llama.cpp/tools/ui/ui.cpp
+[399/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/llama-server.dir/main.cpp.obj
+[400/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/llama-server-impl.dir/server.cpp.obj
+[401/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/llama-server-impl.dir/server-http.cpp.obj
+[402/406] Building CXX object 3rdparty/llama.cpp/tools/ui/CMakeFiles/llama-ui.dir/ui.cpp.obj
+[403/406] Linking CXX static library 3rdparty\llama.cpp\tools\ui\libllama-ui.a
+[404/406] Building CXX object 3rdparty/llama.cpp/tools/server/CMakeFiles/llama-server-impl.dir/server-models.cpp.obj
+[405/406] Linking CXX static library 3rdparty\llama.cpp\tools\server\libllama-server-impl.a
+[406/406] Linking CXX executable bin\llama-server.exe
+BUILD_RC=0
+BUILD_DONE_MARKER

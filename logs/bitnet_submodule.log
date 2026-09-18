@@ -1,0 +1,5 @@
+Submodule '3rdparty/llama.cpp' (https://github.com/isHuangXin/llama.cpp.git) registered for path '3rdparty/llama.cpp'
+Cloning into 'C:/Users/gerso/Desktop/TBC/third_party/BitNet/3rdparty/llama.cpp'...
+From https://github.com/isHuangXin/llama.cpp
+ * branch            390c307752ab78fd8189f359d6954c9ba1be74af -> FETCH_HEAD
+Submodule path '3rdparty/llama.cpp': checked out '390c307752ab78fd8189f359d6954c9ba1be74af'

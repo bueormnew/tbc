@@ -1,0 +1,7 @@
+[exp-gpt2] cargando modelo + tokenizer...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 28/148 [00:00<00:01, 85.44it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 441.82it/s]
+[exp-gpt2] lineales TBC: 48 (esperado 48), tensores: 149
+[exp-gpt2] vocab=50257 merges=50000
+[exp-gpt2] F32: {'path': 'tbc_output_gpt2\\gpt2-pure2-f32.gguf', 'n_tensors': 149, 'bytes': 654125056}
+[exp-gpt2] I2_S: {'path': 'tbc_output_gpt2\\gpt2-pure2-i2s.gguf', 'n_tensors': 149, 'bytes': 335621632}

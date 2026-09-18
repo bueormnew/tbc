@@ -1,0 +1,6 @@
+[exp] cargando modelo + tokenizer...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/47 [00:00<?, ?it/s]Loading weights: 100%|██████████| 47/47 [00:00<00:00, 9858.09it/s]
+[exp] tensores: 48 (lineales TBC: 35)
+[exp] F32: {'path': 'C:\\Users\\gerso\\Desktop\\TBC\\tbc_output\\nanodex-tbc-f32.gguf', 'n_tensors': 48, 'bytes': 5369600}
+[exp] I2_S: {'path': 'C:\\Users\\gerso\\Desktop\\TBC\\tbc_output\\nanodex-tbc-i2s.gguf', 'n_tensors': 48, 'bytes': 2375520}

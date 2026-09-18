@@ -1,0 +1,115 @@
+2026-09-16 20:27:59,916 [std] config: TBCConfig(vram_budget='6GB', ram_budget='6GB', group_size=32, beam_size=8, epsilon_target=0.2, epsilon_schedule=[0.25, 0.2], epsilon_cheap=0.15, epsilon_medium=0.1, calibration_samples=1024, calibration_seq_len=16, packing_format='I2_S_TL2', seed=1234, max_passes_per_layer=2, candidates_per_group=32, lambda_A=0.2, lambda_H=0.3, lambda_L=0.2, lambda_KL=0.3, mode='standard', enable_cross_layer_refinement=True, enable_backtracking=True)
+2026-09-16 20:27:59,916 [std] cargando NanoDex-1M...
+2026-09-16 20:28:00,252 HTTP Request: HEAD https://huggingface.co/DedeProGames/NanoDex-1M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 20:28:00,303 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/DedeProGames/NanoDex-1M/a1cc119c4a36af37e55481e265830b69d2dc8d93/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/47 [00:00<?, ?it/s]Loading weights: 100%|██████████| 47/47 [00:00<00:00, 36418.31it/s]
+2026-09-16 20:28:01,355 HTTP Request: HEAD https://huggingface.co/DedeProGames/NanoDex-1M/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 20:28:01,394 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/DedeProGames/NanoDex-1M/a1cc119c4a36af37e55481e265830b69d2dc8d93/generation_config.json "HTTP/1.1 200 OK"
+2026-09-16 20:28:01,510 HTTP Request: HEAD https://huggingface.co/DedeProGames/NanoDex-1M/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-16 20:28:01,511 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-16 20:28:01,619 HTTP Request: HEAD https://huggingface.co/DedeProGames/NanoDex-1M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 20:28:01,663 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/DedeProGames/NanoDex-1M/a1cc119c4a36af37e55481e265830b69d2dc8d93/config.json "HTTP/1.1 200 OK"
+2026-09-16 20:28:01,781 HTTP Request: HEAD https://huggingface.co/DedeProGames/NanoDex-1M/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 20:28:01,821 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/DedeProGames/NanoDex-1M/a1cc119c4a36af37e55481e265830b69d2dc8d93/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-16 20:28:01,935 HTTP Request: GET https://huggingface.co/api/models/DedeProGames/NanoDex-1M/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-16 20:28:02,060 HTTP Request: GET https://huggingface.co/api/models/DedeProGames/NanoDex-1M/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-16 20:28:02,078 [std] calib: (1024, 16)
+2026-09-16 20:28:02,079 [TBC] arch=llama capas_objetivo=35 group=32 beam=8
+2026-09-16 20:28:13,420 [TBC] sensitivity: {'model.layers.0.self_attn.q_proj': 0.828, 'model.layers.0.self_attn.k_proj': 0.642, 'model.layers.0.self_attn.v_proj': 0.689, 'model.layers.0.self_attn.o_proj': 0.82, 'model.layers.0.mlp.gate_proj': 0.551, 'model.layers.0.mlp.up_proj': 0.58, 'model.layers.0.mlp.down_proj': 0.586, 'model.layers.1.self_attn.q_proj': 0.698, 'model.layers.1.self_attn.k_proj': 0.719, 'model.layers.1.self_attn.v_proj': 0.718, 'model.layers.1.self_attn.o_proj': 0.746, 'model.layers.1.mlp.gate_proj': 0.65, 'model.layers.1.mlp.up_proj': 0.667, 'model.layers.1.mlp.down_proj': 0.684, 'model.layers.2.self_attn.q_proj': 0.723, 'model.layers.2.self_attn.k_proj': 0.729, 'model.layers.2.self_attn.v_proj': 0.967, 'model.layers.2.self_attn.o_proj': 1.0, 'model.layers.2.mlp.gate_proj': 0.661, 'model.layers.2.mlp.up_proj': 0.713, 'model.layers.2.mlp.down_proj': 0.666, 'model.layers.3.self_attn.q_proj': 0.665, 'model.layers.3.self_attn.k_proj': 0.66, 'model.layers.3.self_attn.v_proj': 0.752, 'model.layers.3.self_attn.o_proj': 0.715, 'model.layers.3.mlp.gate_proj': 0.658, 'model.layers.3.mlp.up_proj': 0.682, 'model.layers.3.mlp.down_proj': 0.677, 'model.layers.4.self_attn.q_proj': 0.735, 'model.layers.4.self_attn.k_proj': 0.686, 'model.layers.4.self_attn.v_proj': 0.749, 'model.layers.4.self_attn.o_proj': 0.631, 'model.layers.4.mlp.gate_proj': 0.637, 'model.layers.4.mlp.up_proj': 0.645, 'model.layers.4.mlp.down_proj': 0.625}
+2026-09-16 20:28:13,421 [TBC] === pasada epsilon=0.25 ===
+2026-09-16 20:28:18,456 [TBC] capa=model.layers.0.mlp.gate_proj S=0.55 E=0.3722 (init 0.3729) evals=537 pruned=487 t=5.0s RETRY
+2026-09-16 20:28:24,157 [TBC] capa=model.layers.0.mlp.up_proj S=0.58 E=0.3912 (init 0.3923) evals=543 pruned=481 t=5.7s RETRY
+2026-09-16 20:28:34,496 [TBC] capa=model.layers.0.mlp.down_proj S=0.59 E=0.3933 (init 0.3964) evals=1208 pruned=1096 t=10.3s RETRY
+2026-09-16 20:28:44,585 [TBC] capa=model.layers.4.mlp.down_proj S=0.62 E=0.4206 (init 0.4230) evals=1201 pruned=1103 t=10.1s RETRY
+2026-09-16 20:28:47,103 [TBC] capa=model.layers.4.self_attn.o_proj S=0.63 E=0.4355 (init 0.4374) evals=534 pruned=490 t=2.5s RETRY
+2026-09-16 20:28:52,752 [TBC] capa=model.layers.4.mlp.gate_proj S=0.64 E=0.4300 (init 0.4311) evals=534 pruned=490 t=5.6s RETRY
+2026-09-16 20:28:54,125 [TBC] capa=model.layers.0.self_attn.k_proj S=0.64 E=0.4474 (init 0.4546) evals=535 pruned=489 t=1.4s RETRY
+2026-09-16 20:29:00,012 [TBC] capa=model.layers.4.mlp.up_proj S=0.65 E=0.4349 (init 0.4366) evals=540 pruned=484 t=5.9s RETRY
+2026-09-16 20:29:06,153 [TBC] capa=model.layers.1.mlp.gate_proj S=0.65 E=0.4388 (init 0.4399) evals=543 pruned=481 t=6.1s RETRY
+2026-09-16 20:29:12,278 [TBC] capa=model.layers.3.mlp.gate_proj S=0.66 E=0.4440 (init 0.4450) evals=543 pruned=481 t=6.1s RETRY
+2026-09-16 20:29:15,089 [TBC] capa=model.layers.3.self_attn.k_proj S=0.66 E=0.4640 (init 0.4679) evals=1066 pruned=982 t=2.8s RETRY
+2026-09-16 20:29:24,918 [TBC] capa=model.layers.2.mlp.gate_proj S=0.66 E=0.4461 (init 0.4472) evals=1050 pruned=998 t=9.8s RETRY
+2026-09-16 20:29:30,121 [TBC] capa=model.layers.3.self_attn.q_proj S=0.66 E=0.4593 (init 0.4609) evals=1061 pruned=987 t=5.2s RETRY
+2026-09-16 20:29:48,665 [TBC] capa=model.layers.2.mlp.down_proj S=0.67 E=0.4488 (init 0.4505) evals=2363 pruned=2245 t=18.5s RETRY
+2026-09-16 20:29:59,285 [TBC] capa=model.layers.1.mlp.up_proj S=0.67 E=0.4504 (init 0.4515) evals=1056 pruned=992 t=10.6s RETRY
+2026-09-16 20:30:18,887 [TBC] capa=model.layers.3.mlp.down_proj S=0.68 E=0.4566 (init 0.4584) evals=2371 pruned=2237 t=19.6s RETRY
+2026-09-16 20:30:30,163 [TBC] capa=model.layers.3.mlp.up_proj S=0.68 E=0.4601 (init 0.4616) evals=1062 pruned=986 t=11.3s RETRY
+2026-09-16 20:30:50,877 [TBC] capa=model.layers.1.mlp.down_proj S=0.68 E=0.4615 (init 0.4629) evals=2378 pruned=2230 t=20.7s RETRY
+2026-09-16 20:30:54,054 [TBC] capa=model.layers.4.self_attn.k_proj S=0.69 E=0.4802 (init 0.4859) evals=1062 pruned=986 t=3.2s RETRY
+2026-09-16 20:30:57,142 [TBC] capa=model.layers.0.self_attn.v_proj S=0.69 E=0.4837 (init 0.4882) evals=1060 pruned=988 t=3.1s RETRY
+2026-09-16 20:31:03,309 [TBC] capa=model.layers.1.self_attn.q_proj S=0.70 E=0.4810 (init 0.4843) evals=1074 pruned=974 t=6.2s RETRY
+2026-09-16 20:31:16,425 [TBC] capa=model.layers.2.mlp.up_proj S=0.71 E=0.4815 (init 0.4828) evals=1061 pruned=987 t=13.1s RETRY
+2026-09-16 20:31:22,302 [TBC] capa=model.layers.3.self_attn.o_proj S=0.72 E=0.4921 (init 0.4960) evals=1055 pruned=991 t=5.9s RETRY
+2026-09-16 20:31:25,822 [TBC] capa=model.layers.1.self_attn.v_proj S=0.72 E=0.4979 (init 0.5091) evals=1060 pruned=988 t=3.5s RETRY
+2026-09-16 20:31:29,826 [TBC] capa=model.layers.1.self_attn.k_proj S=0.72 E=0.5054 (init 0.5097) evals=1072 pruned=972 t=4.0s RETRY
+2026-09-16 20:31:35,817 [TBC] capa=model.layers.2.self_attn.q_proj S=0.72 E=0.4984 (init 0.5017) evals=1052 pruned=996 t=6.0s RETRY
+2026-09-16 20:31:39,119 [TBC] capa=model.layers.2.self_attn.k_proj S=0.73 E=0.5126 (init 0.5168) evals=1056 pruned=992 t=3.3s RETRY
+2026-09-16 20:31:45,422 [TBC] capa=model.layers.4.self_attn.q_proj S=0.73 E=0.5074 (init 0.5095) evals=1058 pruned=990 t=6.3s RETRY
+2026-09-16 20:31:52,130 [TBC] capa=model.layers.1.self_attn.o_proj S=0.75 E=0.5125 (init 0.5176) evals=1060 pruned=988 t=6.7s RETRY
+2026-09-16 20:31:55,533 [TBC] capa=model.layers.4.self_attn.v_proj S=0.75 E=0.5227 (init 0.5304) evals=1055 pruned=993 t=3.4s RETRY
+2026-09-16 20:31:58,669 [TBC] capa=model.layers.3.self_attn.v_proj S=0.75 E=0.5226 (init 0.5331) evals=1050 pruned=998 t=3.1s RETRY
+2026-09-16 20:32:05,039 [TBC] capa=model.layers.0.self_attn.o_proj S=0.82 E=0.5598 (init 0.5687) evals=1059 pruned=989 t=6.4s RETRY
+2026-09-16 20:32:11,485 [TBC] capa=model.layers.0.self_attn.q_proj S=0.83 E=0.5694 (init 0.5744) evals=1056 pruned=992 t=6.4s RETRY
+2026-09-16 20:32:15,219 [TBC] capa=model.layers.2.self_attn.v_proj S=0.97 E=0.6736 (init 0.6851) evals=1078 pruned=970 t=3.7s RETRY
+2026-09-16 20:32:21,611 [TBC] capa=model.layers.2.self_attn.o_proj S=1.00 E=0.6893 (init 0.6936) evals=1054 pruned=994 t=6.4s RETRY
+2026-09-16 20:32:21,611 [TBC] backtracking por E=0.6893 > eps=0.25 en model.layers.2.self_attn.o_proj
+2026-09-16 20:32:48,991 [TBC] === pasada epsilon=0.20 ===
+2026-09-16 20:32:56,415 [TBC] capa=model.layers.0.mlp.gate_proj S=0.55 E=0.3722 (init 0.3729) evals=535 pruned=489 t=7.4s RETRY
+2026-09-16 20:33:04,730 [TBC] capa=model.layers.0.mlp.up_proj S=0.58 E=0.3915 (init 0.3923) evals=545 pruned=479 t=8.3s RETRY
+2026-09-16 20:33:19,182 [TBC] capa=model.layers.0.mlp.down_proj S=0.59 E=0.3927 (init 0.3964) evals=1211 pruned=1093 t=14.4s RETRY
+2026-09-16 20:33:34,773 [TBC] capa=model.layers.4.mlp.down_proj S=0.62 E=0.4205 (init 0.4230) evals=1221 pruned=1083 t=15.6s RETRY
+2026-09-16 20:33:38,411 [TBC] capa=model.layers.4.self_attn.o_proj S=0.63 E=0.4350 (init 0.4374) evals=541 pruned=483 t=3.6s RETRY
+2026-09-16 20:33:46,645 [TBC] capa=model.layers.4.mlp.gate_proj S=0.64 E=0.4301 (init 0.4311) evals=542 pruned=482 t=8.2s RETRY
+2026-09-16 20:33:48,705 [TBC] capa=model.layers.0.self_attn.k_proj S=0.64 E=0.4486 (init 0.4546) evals=544 pruned=480 t=2.1s RETRY
+2026-09-16 20:33:56,156 [TBC] capa=model.layers.4.mlp.up_proj S=0.65 E=0.4350 (init 0.4366) evals=534 pruned=490 t=7.4s RETRY
+2026-09-16 20:34:04,478 [TBC] capa=model.layers.1.mlp.gate_proj S=0.65 E=0.4387 (init 0.4399) evals=542 pruned=482 t=8.3s RETRY
+2026-09-16 20:34:11,877 [TBC] capa=model.layers.3.mlp.gate_proj S=0.66 E=0.4435 (init 0.4450) evals=532 pruned=492 t=7.4s RETRY
+2026-09-16 20:34:15,504 [TBC] capa=model.layers.3.self_attn.k_proj S=0.66 E=0.4643 (init 0.4679) evals=1071 pruned=977 t=3.6s RETRY
+2026-09-16 20:34:29,302 [TBC] capa=model.layers.2.mlp.gate_proj S=0.66 E=0.4458 (init 0.4472) evals=1050 pruned=998 t=13.8s RETRY
+2026-09-16 20:34:36,021 [TBC] capa=model.layers.3.self_attn.q_proj S=0.66 E=0.4581 (init 0.4609) evals=1064 pruned=982 t=6.7s RETRY
+2026-09-16 20:35:01,503 [TBC] capa=model.layers.2.mlp.down_proj S=0.67 E=0.4490 (init 0.4505) evals=2373 pruned=2235 t=25.5s RETRY
+2026-09-16 20:35:15,496 [TBC] capa=model.layers.1.mlp.up_proj S=0.67 E=0.4498 (init 0.4515) evals=1054 pruned=994 t=14.0s RETRY
+2026-09-16 20:35:41,294 [TBC] capa=model.layers.3.mlp.down_proj S=0.68 E=0.4565 (init 0.4584) evals=2375 pruned=2233 t=25.8s RETRY
+2026-09-16 20:35:55,727 [TBC] capa=model.layers.3.mlp.up_proj S=0.68 E=0.4605 (init 0.4616) evals=1056 pruned=992 t=14.4s RETRY
+2026-09-16 20:36:20,814 [TBC] capa=model.layers.1.mlp.down_proj S=0.68 E=0.4612 (init 0.4629) evals=2360 pruned=2248 t=25.1s RETRY
+2026-09-16 20:36:24,313 [TBC] capa=model.layers.4.self_attn.k_proj S=0.69 E=0.4816 (init 0.4859) evals=1065 pruned=983 t=3.5s RETRY
+2026-09-16 20:36:27,811 [TBC] capa=model.layers.0.self_attn.v_proj S=0.69 E=0.4838 (init 0.4882) evals=1055 pruned=993 t=3.5s RETRY
+2026-09-16 20:36:34,239 [TBC] capa=model.layers.1.self_attn.q_proj S=0.70 E=0.4827 (init 0.4843) evals=1051 pruned=995 t=6.4s RETRY
+2026-09-16 20:36:49,066 [TBC] capa=model.layers.2.mlp.up_proj S=0.71 E=0.4813 (init 0.4828) evals=1057 pruned=991 t=14.8s RETRY
+2026-09-16 20:36:55,416 [TBC] capa=model.layers.3.self_attn.o_proj S=0.72 E=0.4917 (init 0.4960) evals=1050 pruned=998 t=6.3s RETRY
+2026-09-16 20:36:58,898 [TBC] capa=model.layers.1.self_attn.v_proj S=0.72 E=0.4937 (init 0.5091) evals=1056 pruned=992 t=3.5s RETRY
+2026-09-16 20:37:02,244 [TBC] capa=model.layers.1.self_attn.k_proj S=0.72 E=0.5070 (init 0.5097) evals=1061 pruned=987 t=3.3s RETRY
+2026-09-16 20:37:08,579 [TBC] capa=model.layers.2.self_attn.q_proj S=0.72 E=0.4987 (init 0.5017) evals=1053 pruned=995 t=6.3s RETRY
+2026-09-16 20:37:11,955 [TBC] capa=model.layers.2.self_attn.k_proj S=0.73 E=0.5117 (init 0.5168) evals=1061 pruned=985 t=3.4s RETRY
+2026-09-16 20:37:18,317 [TBC] capa=model.layers.4.self_attn.q_proj S=0.73 E=0.5073 (init 0.5095) evals=1055 pruned=993 t=6.4s RETRY
+2026-09-16 20:37:25,233 [TBC] capa=model.layers.1.self_attn.o_proj S=0.75 E=0.5141 (init 0.5176) evals=1063 pruned=985 t=6.9s RETRY
+2026-09-16 20:37:28,538 [TBC] capa=model.layers.4.self_attn.v_proj S=0.75 E=0.5234 (init 0.5304) evals=1061 pruned=987 t=3.3s RETRY
+2026-09-16 20:37:31,906 [TBC] capa=model.layers.3.self_attn.v_proj S=0.75 E=0.5233 (init 0.5331) evals=1055 pruned=993 t=3.4s RETRY
+2026-09-16 20:37:38,505 [TBC] capa=model.layers.0.self_attn.o_proj S=0.82 E=0.5571 (init 0.5687) evals=1063 pruned=985 t=6.6s RETRY
+2026-09-16 20:37:44,805 [TBC] capa=model.layers.0.self_attn.q_proj S=0.83 E=0.5713 (init 0.5744) evals=1057 pruned=989 t=6.3s RETRY
+2026-09-16 20:37:48,482 [TBC] capa=model.layers.2.self_attn.v_proj S=0.97 E=0.6771 (init 0.6851) evals=1061 pruned=985 t=3.7s RETRY
+2026-09-16 20:37:55,608 [TBC] capa=model.layers.2.self_attn.o_proj S=1.00 E=0.6898 (init 0.6936) evals=1067 pruned=981 t=7.1s RETRY
+2026-09-16 20:37:55,608 [TBC] backtracking por E=0.6898 > eps=0.20 en model.layers.2.self_attn.o_proj
+2026-09-16 20:38:23,257 [TBC] === refinamiento cross-layer (top-4 peores) ===
+2026-09-16 20:39:11,909 [TBC] refine model.layers.2.self_attn.o_proj: 0.6854 -> 0.6819 (48.7s)
+2026-09-16 20:39:35,887 [TBC] refine model.layers.2.self_attn.v_proj: 0.6674 -> 0.6632 (24.0s)
+2026-09-16 20:40:24,651 [TBC] refine model.layers.0.self_attn.q_proj: 0.5713 -> 0.5621 (48.8s)
+2026-09-16 20:41:14,380 [TBC] refine model.layers.0.self_attn.o_proj: 0.5571 -> 0.5343 (49.7s)
+2026-09-16 20:41:14,380 [TBC] 35 capas sobre epsilon_target: ['model.layers.0.mlp.gate_proj', 'model.layers.0.mlp.up_proj', 'model.layers.0.mlp.down_proj', 'model.layers.4.mlp.down_proj', 'model.layers.4.self_attn.o_proj']
+2026-09-16 20:41:14,389 [std] status=COMPILED_WITH_WARNINGS global_E=0.4799 peak=1.312GB
+2026-09-16 20:41:17,459 [std] PPL fp=45.95 rtn=395.84 tbc=338.68
+2026-09-16 20:41:31,100 [std] export rc=0
+t ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.2.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.3.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.4.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] tensores: 48 (lineales TBC: 35)
+[exp] F32: {'path': 'C:\\Users\\gerso\\Desktop\\TBC\\tbc_output_std\\nanodex-tbc-standard-f32.gguf', 'n_tensors': 48, 'bytes': 5369600}
+[exp] I2_S: {'path': 'C:\\Users\\gerso\\Desktop\\TBC\\tbc_output_std\\nanodex-tbc-standard-i2s.gguf', 'n_tensors': 48, 'bytes': 3066560}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/47 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 47/47 [00:00<00:00, 25121.99it/s]
+
+STD global_E=0.4799 PPL fp=45.95 rtn=395.84 tbc=338.68 peak=1.312GB

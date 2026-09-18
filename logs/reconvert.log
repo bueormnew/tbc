@@ -1,0 +1,4 @@
+[tbc2gguf] escrito tbc_output\model-i2_s-reconvert.gguf n_tensors=70 bytes=258784
+[tbc2gguf] can_load=True
+GGUF_OK ver=3 n_tensors=70 size=258784B
+BINARY_MISSING: binario llama-b1-58 no compilado; GGUF estructuralmente válido, pendiente validación de runtime (ver logs/bitnet_build.log)

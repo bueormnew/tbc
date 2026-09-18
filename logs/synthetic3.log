@@ -1,0 +1,17 @@
+2026-09-16 20:59:31,584 TEST1: ternarización trivial + α analítico [1024,1024]
+2026-09-16 20:59:33,653   [iid N(0,1) referencia] err_L2=0.4652 (teórico esperado ~0.40-0.55, Sec 33)
+2026-09-16 20:59:36,328   [estructurado LLM-like] err_L2=0.1849 (umbral 0.20) alpha_mean=0.9949
+2026-09-16 20:59:36,328   TEST1 PASS (iid=0.4652 documental, estruct=0.1849<0.20)
+2026-09-16 20:59:36,329 TEST2: Coordinate Search en capa LLaMA-like -> reduce E
+2026-09-16 20:59:38,462   E_init=0.2410 E_best=0.2409 evals=516 pruned=508
+2026-09-16 20:59:38,462   TEST2 PASS (reducción 0.02%)
+2026-09-16 20:59:38,462 TEST3: cached evaluation vs full forward -> diff < 1e-5
+2026-09-16 20:59:38,537   diff_cached=0.00e+00 diff_incremental=4.77e-06
+2026-09-16 20:59:38,538   TEST3 PASS
+2026-09-16 20:59:38,538 TEST4: pack/unpack I2_S TL2 roundtrip 100% idéntico
+2026-09-16 20:59:38,544   shape=(64, 130) bytes=2080 idéntico=True
+2026-09-16 20:59:38,544   TEST4 PASS
+2026-09-16 20:59:38,544 TEST5: BehaviorCache 1GB no crece tras init (freeze)
+2026-09-16 20:59:38,990   used=79152 budget=1000000000 summaries=50 evictions=0 frozen=True
+2026-09-16 20:59:38,990   TEST5 PASS
+2026-09-16 20:59:38,990 TODOS LOS TESTS SINTÉTICOS PASS en 7.4s

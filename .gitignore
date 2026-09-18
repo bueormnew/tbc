@@ -1,0 +1,30 @@
+# Binarios y artefactos pesados (regenerables con los scripts; ver README §4)
+*.gguf
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# Build de bitnet.cpp y checkout third-party (ver third_party/README.md)
+third_party/BitNet/
+build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Caches y temporales
+.huggingface/
+.cache/
+*.tmp
+*.bak
+
+# OS / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,45 @@
+2026-09-17 19:35:23,796 [gpt2] config: TBCConfig(vram_budget='6GB', ram_budget='6GB', group_size=32, beam_size=4, epsilon_target=0.05, epsilon_schedule=[0.05], epsilon_cheap=0.15, epsilon_medium=0.1, calibration_samples=256, calibration_seq_len=32, max_tokens_per_layer=1024, packing_format='I2_S_TL2', seed=1234, max_passes_per_layer=1, candidates_per_group=64, lambda_A=0.2, lambda_H=0.3, lambda_L=0.2, lambda_KL=0.3, mode='fast', enable_cross_layer_refinement=False, enable_backtracking=True)
+2026-09-17 19:35:23,797 [gpt2] descargando GPT-2 small...
+2026-09-17 19:35:24,106 HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-09-17 19:35:24,216 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-17 19:35:24,218 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-17 19:35:24,253 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json "HTTP/1.1 200 OK"
+2026-09-17 19:35:24,412 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   9%|▉         | 14/148 [00:00<00:00, 137.95it/s]Loading weights:  24%|██▍       | 36/148 [00:00<00:00, 161.82it/s]Loading weights:  35%|███▌      | 52/148 [00:00<00:01, 81.84it/s] Loading weights: 100%|██████████| 148/148 [00:00<00:00, 261.14it/s]
+2026-09-17 19:35:25,563 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 19:35:25,622 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/generation_config.json "HTTP/1.1 200 OK"
+2026-09-17 19:35:25,784 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 19:35:25,835 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-17 19:35:25,969 HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 19:35:26,106 HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 19:35:26,869 [gpt2] params=124439808 arch=GPT2LMHeadModel
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1410 > 1024). Running this sequence through the model will result in indexing errors
+2026-09-17 19:35:26,910 [TBC] arch=gpt2 capas_objetivo=48 group=32 beam=4
+2026-09-17 19:37:26,320 [TBC] sensitivity: {'transformer.h.0.attn.c_attn': 0.502, 'transformer.h.0.attn.c_proj': 0.368, 'transformer.h.0.mlp.c_fc': 0.249, 'transformer.h.0.mlp.c_proj': 0.787, 'transformer.h.1.attn.c_attn': 0.453, 'transformer.h.1.attn.c_proj': 1.0, 'transformer.h.1.mlp.c_fc': 0.311, 'transformer.h.1.mlp.c_proj': 0.868, 'transformer.h.2.attn.c_attn': 0.567, 'transformer.h.2.attn.c_proj': 0.868, 'transformer.h.2.mlp.c_fc': 0.333, 'transformer.h.2.mlp.c_proj': 0.859, 'transformer.h.3.attn.c_attn': 0.661, 'transformer.h.3.attn.c_proj': 0.691, 'transformer.h.3.mlp.c_fc': 0.242, 'transformer.h.3.mlp.c_proj': 0.788, 'transformer.h.4.attn.c_attn': 0.681, 'transformer.h.4.attn.c_proj': 0.686, 'transformer.h.4.mlp.c_fc': 0.266, 'transformer.h.4.mlp.c_proj': 0.616, 'transformer.h.5.attn.c_attn': 0.556, 'transformer.h.5.attn.c_proj': 0.718, 'transformer.h.5.mlp.c_fc': 0.253, 'transformer.h.5.mlp.c_proj': 0.675, 'transformer.h.6.attn.c_attn': 0.595, 'transformer.h.6.attn.c_proj': 0.542, 'transformer.h.6.mlp.c_fc': 0.258, 'transformer.h.6.mlp.c_proj': 0.699, 'transformer.h.7.attn.c_attn': 0.558, 'transformer.h.7.attn.c_proj': 0.528, 'transformer.h.7.mlp.c_fc': 0.252, 'transformer.h.7.mlp.c_proj': 0.761, 'transformer.h.8.attn.c_attn': 0.556, 'transformer.h.8.attn.c_proj': 0.454, 'transformer.h.8.mlp.c_fc': 0.254, 'transformer.h.8.mlp.c_proj': 0.754, 'transformer.h.9.attn.c_attn': 0.529, 'transformer.h.9.attn.c_proj': 0.407, 'transformer.h.9.mlp.c_fc': 0.249, 'transformer.h.9.mlp.c_proj': 0.762, 'transformer.h.10.attn.c_attn': 0.494, 'transformer.h.10.attn.c_proj': 0.404, 'transformer.h.10.mlp.c_fc': 0.269, 'transformer.h.10.mlp.c_proj': 0.822, 'transformer.h.11.attn.c_attn': 0.487, 'transformer.h.11.attn.c_proj': 0.199, 'transformer.h.11.mlp.c_fc': 0.283, 'transformer.h.11.mlp.c_proj': 0.864}
+2026-09-17 19:37:26,447 [TBC] resume desde C:\Users\gerso\Desktop\TBC\tbc_output_gpt2\ckpt.pt: 34 capas
+2026-09-17 19:37:26,447 [TBC] === pasada epsilon=0.05 ===
+2026-09-17 19:38:41,000 [TBC] capa=transformer.h.5.mlp.c_proj S=0.68 E=0.7070 (init 0.7070) evals=2904 pruned=1128 t=74.4s RETRY
+2026-09-17 19:38:55,399 [TBC] capa=transformer.h.3.attn.c_proj S=0.69 E=0.7473 (init 0.7515) evals=2046 pruned=2034 t=14.2s RETRY
+2026-09-17 19:39:18,590 [TBC] capa=transformer.h.5.attn.c_proj S=0.72 E=0.7691 (init 0.7809) evals=2231 pruned=1849 t=23.0s RETRY
+2026-09-17 19:41:48,877 [TBC] capa=transformer.h.8.mlp.c_proj S=0.75 E=0.7893 (init 0.7893) evals=2913 pruned=1119 t=148.8s RETRY
+2026-09-17 19:44:35,705 [TBC] capa=transformer.h.7.mlp.c_proj S=0.76 E=0.7902 (init 0.7971) evals=3596 pruned=436 t=166.6s RETRY
+2026-09-17 19:46:44,875 [TBC] capa=transformer.h.9.mlp.c_proj S=0.76 E=0.7943 (init 0.7982) evals=3541 pruned=491 t=128.9s RETRY
+2026-09-17 19:49:34,901 [TBC] capa=transformer.h.0.mlp.c_proj S=0.79 E=0.8240 (init 0.8240) evals=2889 pruned=1143 t=169.8s RETRY
+2026-09-17 19:50:28,644 [TBC] capa=transformer.h.3.mlp.c_proj S=0.79 E=0.8249 (init 0.8249) evals=2017 pruned=2015 t=53.5s RETRY
+2026-09-17 19:52:01,411 [TBC] capa=transformer.h.10.mlp.c_proj S=0.82 E=0.8611 (init 0.8611) evals=2930 pruned=1102 t=92.6s RETRY
+2026-09-17 19:54:23,876 [TBC] capa=transformer.h.2.mlp.c_proj S=0.86 E=0.8986 (init 0.8990) evals=3943 pruned=87 t=142.2s RETRY
+2026-09-17 19:55:53,442 [TBC] capa=transformer.h.11.mlp.c_proj S=0.86 E=0.9051 (init 0.9051) evals=2937 pruned=1095 t=89.4s RETRY
+2026-09-17 19:56:12,744 [TBC] capa=transformer.h.2.attn.c_proj S=0.87 E=0.9101 (init 0.9432) evals=2042 pruned=2038 t=19.1s RETRY
+2026-09-17 19:57:59,347 [TBC] capa=transformer.h.1.mlp.c_proj S=0.87 E=0.9090 (init 0.9090) evals=3261 pruned=771 t=106.4s RETRY
+2026-09-17 19:58:22,765 [TBC] capa=transformer.h.1.attn.c_proj S=1.00 E=1.0871 (init 1.0871) evals=2041 pruned=2039 t=23.2s RETRY
+2026-09-17 19:58:22,766 [TBC] backtracking por E=1.0871 > eps=0.05 en transformer.h.1.attn.c_proj
+2026-09-17 19:59:48,544 [TBC] convergidas: 34/48
+2026-09-17 19:59:48,544 [TBC] 48 capas sobre epsilon_target: ['transformer.h.11.attn.c_proj', 'transformer.h.3.mlp.c_fc', 'transformer.h.0.mlp.c_fc', 'transformer.h.7.mlp.c_fc', 'transformer.h.9.mlp.c_fc']
+2026-09-17 19:59:48,691 [gpt2] status=COMPILED_WITH_WARNINGS global_E=0.5702 peak=1.835GB
+2026-09-17 19:59:48,694 [gpt2] 48 lineales objetivo
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+2026-09-17 19:59:49,617 [gpt2] PPL_FP32=22.615
+2026-09-17 20:00:38,487 [gpt2] PPL_RTN=12223.054
+2026-09-17 20:00:39,558 [gpt2] PPL_TBC=11678.519
+GPT2 global_E=0.5702 PPL fp=22.62 rtn=12223.05 tbc=11678.52 peak=1.835GB

@@ -1,0 +1,40 @@
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-390c307
+model      : tbc_output_gpt2_r\gpt2-r-i2s.gguf
+ftype      : all F32
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Hello, I am a small language model
+
+ and name is to that that time is name. "
+
+ number "2 for time is
+ the of the The The if The-length to left to
+ I there situation sort response way up
+
+[ Prompt: 654.6 t/s | Generation: 79.3 t/s ]
+
+> 
+
+> 
+
+Exiting...

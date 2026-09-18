@@ -1,0 +1,83 @@
+{
+  "model": "gpt2",
+  "stages": {
+    "FP32": 22.61526597888981,
+    "R0_TBC": 12133.867925391816,
+    "R1_adapt": 810.7400740070045,
+    "R2_accept": 785.4949008801776,
+    "R3_distill": 60.57196037580447
+  },
+  "promoted": [
+    "transformer.h.0.mlp.c_proj",
+    "transformer.h.1.attn.c_proj",
+    "transformer.h.1.mlp.c_proj",
+    "transformer.h.10.mlp.c_proj",
+    "transformer.h.11.mlp.c_proj",
+    "transformer.h.2.attn.c_proj",
+    "transformer.h.2.mlp.c_proj",
+    "transformer.h.3.attn.c_attn",
+    "transformer.h.3.attn.c_proj",
+    "transformer.h.3.mlp.c_proj",
+    "transformer.h.4.attn.c_attn",
+    "transformer.h.4.attn.c_proj",
+    "transformer.h.4.mlp.c_proj",
+    "transformer.h.5.attn.c_proj",
+    "transformer.h.5.mlp.c_proj",
+    "transformer.h.6.mlp.c_proj",
+    "transformer.h.7.mlp.c_proj",
+    "transformer.h.8.mlp.c_proj",
+    "transformer.h.9.mlp.c_proj"
+  ],
+  "r2_rtn": 14,
+  "eff_bits": 9.587,
+  "r3_stats": {
+    "best_held_nll": 6.203836059570312,
+    "history": [
+      [
+        1,
+        253.5029754638672,
+        8.5504301071167
+      ],
+      [
+        25,
+        89.35189056396484,
+        6.73566042582194
+      ],
+      [
+        50,
+        62.06692123413086,
+        6.365047677357992
+      ],
+      [
+        75,
+        42.21427917480469,
+        6.488338692982992
+      ],
+      [
+        100,
+        32.14871597290039,
+        6.203836059570312
+      ],
+      [
+        125,
+        34.283660888671875,
+        6.316099357604981
+      ],
+      [
+        150,
+        32.3134765625,
+        6.349826176961263
+      ]
+    ],
+    "time_s": 594.7,
+    "peak": {
+      "peak_ram_bytes": 3772383232,
+      "peak_ram_gb": 3.772,
+      "peak_vram_bytes": 0,
+      "peak_vram_gb": 0.0,
+      "ram_budget_gb": 6.442
+    },
+    "n_learnable": 1688064
+  },
+  "total_s": 692.8
+}

@@ -1,0 +1,11 @@
+[exp] cargando modelo + tokenizer...
+[exp] blk.0.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.1.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.2.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.3.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] blk.4.ffn_down.weight ne0=288 no mult.128 -> F32 (mixto)
+[exp] tensores: 48 (lineales TBC: 35)
+[exp] F32: {'path': 'tbc_output\\model-i2_s.gguf.f32tmp.gguf', 'n_tensors': 48, 'bytes': 5369600}
+[exp] I2_S: {'path': 'tbc_output\\model-i2_s.gguf', 'n_tensors': 48, 'bytes': 3066560}
+
+[tbc2gguf] OK tbc_output\model-i2_s.gguf sha256=0cfff4fd37b1fc30b7e265a59d56720763cdb3e271cd94e216f1553ca9e39720

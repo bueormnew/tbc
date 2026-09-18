@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 32/148 [00:00<00:00, 301.51it/s]Loading weights:  43%|████▎     | 64/148 [00:00<00:00, 283.94it/s]Loading weights:  68%|██████▊   | 101/148 [00:00<00:00, 310.36it/s]Loading weights:  90%|████████▉ | 133/148 [00:00<00:00, 192.48it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 239.92it/s]
+--- FP32-original ---
+The challenge is to preserve the behavior of the original model despite the fact that it is not a good fit for the current model.
+
+The problem is that the model is not a good fit for the current model.
+
+The problem is that the model
+--- R0-TBC-puro ---
+The challenge is to preserve the behavior of the original model despite the fact that the model is not a model that is a model of the same, and the model is not a model of the original model.
+
+
+
+
+
+
+
+
+
+
+
+--- R3-recuperado ---
+The challenge is to preserve the behavior of the original model despite the fact that the model is not a model that is a model of the same, and the model is not a model of the original model.
+
+
+
+
+
+
+
+
+
+
+
+DONE

@@ -1,0 +1,39 @@
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-390c307
+model      : tbc_output\nanodex-tbc-f32.gguf
+ftype      : all F32
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> Hello
+
+_(c) or (gggg
+
+[ Prompt: 10281.2 t/s | Generation: 905.1 t/s ]
+
+> 
+
+> [0m
+
+
+Exiting...
+¿Desea terminar el trabajo por lotes (S/N)? 
+CLI_RC=130

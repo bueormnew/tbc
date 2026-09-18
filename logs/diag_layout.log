@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/47 [00:00<?, ?it/s]Loading weights: 100%|██████████| 47/47 [00:00<00:00, 17945.59it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+PPL_torch_seq = 440.12
+PPL_torch_interleaved-misread = 52904.21
+DONE

@@ -1,0 +1,26 @@
+[bench-gpt2] base-FP32 ...
+[bench-gpt2] base-FP32: pp=847.46 tg=60.09 rss=540.7MB
+[bench-gpt2] TBC-R-F32 ...
+[bench-gpt2] TBC-R-F32: pp=882.51 tg=55.16 rss=540.8MB
+[bench-gpt2] TBC-R-I2_S ...
+[bench-gpt2] TBC-R-I2_S: pp=991.54 tg=82.26 rss=354.1MB
+{
+  "base-FP32": {
+    "peak_rss_mb": 540.7,
+    "pp_ts": 847.46,
+    "tg_ts": 60.09,
+    "file_mb": 654.1
+  },
+  "TBC-R-F32": {
+    "peak_rss_mb": 540.8,
+    "pp_ts": 882.51,
+    "tg_ts": 55.16,
+    "file_mb": 654.1
+  },
+  "TBC-R-I2_S": {
+    "peak_rss_mb": 354.1,
+    "pp_ts": 991.54,
+    "tg_ts": 82.26,
+    "file_mb": 466.1
+  }
+}

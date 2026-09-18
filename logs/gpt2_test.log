@@ -1,0 +1,53 @@
+2026-09-17 18:59:40,515 [gpt2] config: TBCConfig(vram_budget='6GB', ram_budget='6GB', group_size=32, beam_size=4, epsilon_target=0.05, epsilon_schedule=[0.05], epsilon_cheap=0.15, epsilon_medium=0.1, calibration_samples=256, calibration_seq_len=32, max_tokens_per_layer=1024, packing_format='I2_S_TL2', seed=1234, max_passes_per_layer=1, candidates_per_group=64, lambda_A=0.2, lambda_H=0.3, lambda_L=0.2, lambda_KL=0.3, mode='fast', enable_cross_layer_refinement=False, enable_backtracking=True)
+2026-09-17 18:59:40,516 [gpt2] descargando GPT-2 small...
+2026-09-17 18:59:41,009 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-17 18:59:41,010 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-17 18:59:41,114 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json "HTTP/1.1 200 OK"
+2026-09-17 18:59:41,314 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 18/148 [00:00<00:00, 165.93it/s]Loading weights:  25%|██▌       | 37/148 [00:00<00:00, 168.73it/s]Loading weights:  36%|███▋      | 54/148 [00:00<00:00, 126.43it/s]Loading weights:  46%|████▌     | 68/148 [00:00<00:00, 124.40it/s]Loading weights:  55%|█████▍    | 81/148 [00:00<00:00, 72.50it/s] Loading weights: 100%|██████████| 148/148 [00:00<00:00, 171.04it/s]
+2026-09-17 18:59:42,753 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 18:59:42,850 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/generation_config.json "HTTP/1.1 200 OK"
+2026-09-17 18:59:43,055 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 18:59:43,361 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-17 18:59:43,567 HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 18:59:43,770 HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 18:59:44,733 [gpt2] params=124439808 arch=GPT2LMHeadModel
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1410 > 1024). Running this sequence through the model will result in indexing errors
+2026-09-17 18:59:44,751 [TBC] arch=gpt2 capas_objetivo=48 group=32 beam=4
+2026-09-17 19:02:32,209 [TBC] sensitivity: {'transformer.h.0.attn.c_attn': 0.498, 'transformer.h.0.attn.c_proj': 0.364, 'transformer.h.0.mlp.c_fc': 0.247, 'transformer.h.0.mlp.c_proj': 0.788, 'transformer.h.1.attn.c_attn': 0.448, 'transformer.h.1.attn.c_proj': 1.0, 'transformer.h.1.mlp.c_fc': 0.309, 'transformer.h.1.mlp.c_proj': 0.862, 'transformer.h.2.attn.c_attn': 0.561, 'transformer.h.2.attn.c_proj': 0.861, 'transformer.h.2.mlp.c_fc': 0.33, 'transformer.h.2.mlp.c_proj': 0.852, 'transformer.h.3.attn.c_attn': 0.656, 'transformer.h.3.attn.c_proj': 0.691, 'transformer.h.3.mlp.c_fc': 0.24, 'transformer.h.3.mlp.c_proj': 0.786, 'transformer.h.4.attn.c_attn': 0.676, 'transformer.h.4.attn.c_proj': 0.679, 'transformer.h.4.mlp.c_fc': 0.264, 'transformer.h.4.mlp.c_proj': 0.602, 'transformer.h.5.attn.c_attn': 0.552, 'transformer.h.5.attn.c_proj': 0.732, 'transformer.h.5.mlp.c_fc': 0.252, 'transformer.h.5.mlp.c_proj': 0.689, 'transformer.h.6.attn.c_attn': 0.59, 'transformer.h.6.attn.c_proj': 0.534, 'transformer.h.6.mlp.c_fc': 0.256, 'transformer.h.6.mlp.c_proj': 0.687, 'transformer.h.7.attn.c_attn': 0.551, 'transformer.h.7.attn.c_proj': 0.522, 'transformer.h.7.mlp.c_fc': 0.249, 'transformer.h.7.mlp.c_proj': 0.75, 'transformer.h.8.attn.c_attn': 0.552, 'transformer.h.8.attn.c_proj': 0.449, 'transformer.h.8.mlp.c_fc': 0.252, 'transformer.h.8.mlp.c_proj': 0.752, 'transformer.h.9.attn.c_attn': 0.526, 'transformer.h.9.attn.c_proj': 0.402, 'transformer.h.9.mlp.c_fc': 0.25, 'transformer.h.9.mlp.c_proj': 0.762, 'transformer.h.10.attn.c_attn': 0.491, 'transformer.h.10.attn.c_proj': 0.4, 'transformer.h.10.mlp.c_fc': 0.264, 'transformer.h.10.mlp.c_proj': 0.817, 'transformer.h.11.attn.c_attn': 0.483, 'transformer.h.11.attn.c_proj': 0.198, 'transformer.h.11.mlp.c_fc': 0.281, 'transformer.h.11.mlp.c_proj': 0.858}
+2026-09-17 19:02:32,210 [TBC] === pasada epsilon=0.05 ===
+2026-09-17 19:02:37,595 [TBC] capa=transformer.h.11.attn.c_proj S=0.20 E=0.2166 (init 0.2166) evals=547 pruned=221 t=5.3s RETRY
+2026-09-17 19:02:50,650 [TBC] capa=transformer.h.3.mlp.c_fc S=0.24 E=0.2531 (init 0.2531) evals=385 pruned=383 t=13.0s RETRY
+2026-09-17 19:03:07,632 [TBC] capa=transformer.h.0.mlp.c_fc S=0.25 E=0.2604 (init 0.2604) evals=385 pruned=383 t=16.9s RETRY
+2026-09-17 19:03:23,208 [TBC] capa=transformer.h.7.mlp.c_fc S=0.25 E=0.2628 (init 0.2628) evals=385 pruned=383 t=15.5s RETRY
+2026-09-17 19:03:37,077 [TBC] capa=transformer.h.9.mlp.c_fc S=0.25 E=0.2644 (init 0.2644) evals=498 pruned=270 t=13.8s RETRY
+2026-09-17 19:03:47,936 [TBC] capa=transformer.h.8.mlp.c_fc S=0.25 E=0.2656 (init 0.2656) evals=385 pruned=383 t=10.8s RETRY
+2026-09-17 19:04:03,595 [TBC] capa=transformer.h.5.mlp.c_fc S=0.25 E=0.2661 (init 0.2661) evals=499 pruned=269 t=15.6s RETRY
+2026-09-17 19:04:13,950 [TBC] capa=transformer.h.6.mlp.c_fc S=0.26 E=0.2703 (init 0.2703) evals=385 pruned=383 t=10.2s RETRY
+2026-09-17 19:04:26,113 [TBC] capa=transformer.h.10.mlp.c_fc S=0.26 E=0.2787 (init 0.2787) evals=385 pruned=383 t=12.1s RETRY
+2026-09-17 19:04:37,273 [TBC] capa=transformer.h.4.mlp.c_fc S=0.26 E=0.2787 (init 0.2787) evals=385 pruned=383 t=11.1s RETRY
+2026-09-17 19:04:53,967 [TBC] capa=transformer.h.11.mlp.c_fc S=0.28 E=0.2970 (init 0.2970) evals=503 pruned=265 t=16.5s RETRY
+2026-09-17 19:05:07,999 [TBC] capa=transformer.h.1.mlp.c_fc S=0.31 E=0.3264 (init 0.3264) evals=385 pruned=383 t=13.9s RETRY
+2026-09-17 19:06:19,753 [TBC] capa=transformer.h.2.mlp.c_fc S=0.33 E=0.3485 (init 0.3485) evals=2019 pruned=1053 t=71.6s RETRY
+2026-09-17 19:07:04,431 [TBC] capa=transformer.h.0.attn.c_proj S=0.36 E=0.3842 (init 0.3992) evals=2081 pruned=991 t=44.6s RETRY
+2026-09-17 19:07:38,846 [TBC] capa=transformer.h.10.attn.c_proj S=0.40 E=0.4283 (init 0.4387) evals=2292 pruned=780 t=34.3s RETRY
+2026-09-17 19:08:02,654 [TBC] capa=transformer.h.9.attn.c_proj S=0.40 E=0.4400 (init 0.4409) evals=1538 pruned=1534 t=23.7s RETRY
+2026-09-17 19:09:09,463 [TBC] capa=transformer.h.1.attn.c_attn S=0.45 E=0.4766 (init 0.4766) evals=2034 pruned=1038 t=66.6s RETRY
+2026-09-17 19:09:33,596 [TBC] capa=transformer.h.8.attn.c_proj S=0.45 E=0.4920 (init 0.4920) evals=1537 pruned=1535 t=24.0s RETRY
+2026-09-17 19:10:39,229 [TBC] capa=transformer.h.11.attn.c_attn S=0.48 E=0.5134 (init 0.5134) evals=2016 pruned=1056 t=65.5s RETRY
+2026-09-17 19:12:55,097 [TBC] capa=transformer.h.10.attn.c_attn S=0.49 E=0.5212 (init 0.5222) evals=2788 pruned=284 t=135.7s RETRY
+2026-09-17 19:14:09,948 [TBC] capa=transformer.h.0.attn.c_attn S=0.50 E=0.5293 (init 0.5293) evals=2104 pruned=968 t=74.7s RETRY
+2026-09-17 19:14:57,512 [TBC] capa=transformer.h.7.attn.c_proj S=0.52 E=0.5526 (init 0.5723) evals=2362 pruned=710 t=47.4s RETRY
+2026-09-17 19:15:41,698 [TBC] capa=transformer.h.9.attn.c_attn S=0.53 E=0.5593 (init 0.5593) evals=1537 pruned=1535 t=44.0s RETRY
+2026-09-17 19:16:11,810 [TBC] capa=transformer.h.6.attn.c_proj S=0.53 E=0.5801 (init 0.5853) evals=1539 pruned=1533 t=30.0s RETRY
+2026-09-17 19:17:20,651 [TBC] capa=transformer.h.7.attn.c_attn S=0.55 E=0.5865 (init 0.5865) evals=2013 pruned=1059 t=68.7s RETRY
+2026-09-17 19:18:39,945 [TBC] capa=transformer.h.5.attn.c_attn S=0.55 E=0.5859 (init 0.5869) evals=1931 pruned=1141 t=79.1s RETRY
+2026-09-17 19:19:20,143 [TBC] capa=transformer.h.8.attn.c_attn S=0.55 E=0.5872 (init 0.5872) evals=1537 pruned=1535 t=40.0s RETRY
+2026-09-17 19:20:09,228 [TBC] capa=transformer.h.2.attn.c_attn S=0.56 E=0.5955 (init 0.5968) evals=1551 pruned=1521 t=48.9s RETRY
+2026-09-17 19:21:19,061 [TBC] capa=transformer.h.6.attn.c_attn S=0.59 E=0.6277 (init 0.6277) evals=2062 pruned=1010 t=69.7s RETRY
+2026-09-17 19:23:23,131 [TBC] capa=transformer.h.4.mlp.c_proj S=0.60 E=0.6354 (init 0.6354) evals=2879 pruned=1153 t=123.9s RETRY
+2026-09-17 19:24:46,765 [TBC] capa=transformer.h.3.attn.c_attn S=0.66 E=0.6979 (init 0.6979) evals=2085 pruned=987 t=83.4s RETRY
+2026-09-17 19:25:53,889 [TBC] capa=transformer.h.4.attn.c_attn S=0.68 E=0.7178 (init 0.7187) evals=2042 pruned=2038 t=67.0s RETRY
+2026-09-17 19:27:26,769 [TBC] capa=transformer.h.4.attn.c_proj S=0.68 E=0.7278 (init 0.7437) evals=3718 pruned=362 t=92.7s RETRY
+2026-09-17 19:29:21,794 [TBC] capa=transformer.h.6.mlp.c_proj S=0.69 E=0.7256 (init 0.7256) evals=2906 pruned=1126 t=114.8s RETRY

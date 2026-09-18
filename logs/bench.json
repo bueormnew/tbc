@@ -1,0 +1,26 @@
+{
+  "base-FP32": {
+    "peak_rss_mb": 28.97,
+    "pp_ts": 22990.09,
+    "tg_ts": 2600.68,
+    "raw_tail": "| model                          |       size |     params | backend    | threads |            test |                  t/s |\n| ------------------------------ | ---------: | ---------: | ---------- | ------: | --------------: | -------------------: |\n| llama ?B all F32               |   5.05 MiB |     1.32 M | CPU        |       4 |           pp128 |   22990.09 \u00b1 2727.28 |\n| llama ?B all F32               |   5.05 MiB |     1.32 M | CPU        |       4 |           tg256 |     2600.68 \u00b1 289.06 |\n\nbuild: 390c307 (1)\n",
+    "file_mb": 5.368,
+    "ppl_bin": 269.2334
+  },
+  "TBC-R-F32": {
+    "peak_rss_mb": 22.03,
+    "pp_ts": 29849.14,
+    "tg_ts": 2214.39,
+    "raw_tail": "| model                          |       size |     params | backend    | threads |            test |                  t/s |\n| ------------------------------ | ---------: | ---------: | ---------- | ------: | --------------: | -------------------: |\n| llama ?B all F32               |   5.05 MiB |     1.32 M | CPU        |       4 |           pp128 |   29849.14 \u00b1 2463.66 |\n| llama ?B all F32               |   5.05 MiB |     1.32 M | CPU        |       4 |           tg256 |     2214.39 \u00b1 248.34 |\n\nbuild: 390c307 (1)\n",
+    "file_mb": 5.37,
+    "ppl_bin": 111.921
+  },
+  "TBC-R-I2_S": {
+    "peak_rss_mb": 20.37,
+    "pp_ts": 20803.24,
+    "tg_ts": 2518.51,
+    "raw_tail": "| model                          |       size |     params | backend    | threads |            test |                  t/s |\n| ------------------------------ | ---------: | ---------: | ---------- | ------: | --------------: | -------------------: |\n| llama ?B all F32               |   2.86 MiB |     1.32 M | CPU        |       4 |           pp128 |   20803.24 \u00b1 3677.94 |\n| llama ?B all F32               |   2.86 MiB |     1.32 M | CPU        |       4 |           tg256 |     2518.51 \u00b1 563.85 |\n\nbuild: 390c307 (1)\n",
+    "file_mb": 3.067,
+    "ppl_bin": 354.8154
+  }
+}

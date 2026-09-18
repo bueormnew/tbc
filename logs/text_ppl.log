@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+vocab 2048
+ids shape (1, 186)
+eval (4, 32)
+Loading weights:   0%|          | 0/47 [00:00<?, ?it/s]Loading weights: 100%|██████████| 47/47 [00:00<00:00, 35927.15it/s]
+PPL_FP16_text=45.9497
+PPL_RTN_text=395.8408
+PPL_TBC_text=354.9369
+DONE text_ppl fp=45.95 rtn=395.84 tbc=354.94

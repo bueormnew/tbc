@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 39/148 [00:00<00:00, 261.95it/s]Loading weights:  45%|████▍     | 66/148 [00:00<00:00, 218.35it/s]Loading weights:  73%|███████▎  | 108/148 [00:00<00:00, 284.78it/s]Loading weights:  93%|█████████▎| 138/148 [00:00<00:00, 182.31it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 218.58it/s]
+--- FP32-original ---
+Hello, I am a small language modeler. I am a small language modeler. I am a small language modeler. I am a small language modeler. I am a small language modeler. I am a small language model
+--- R0-TBC-puro ---
+Hello, I am a small language model, and I can be used in a language that can be used in a language that can be used in a language that can be used in a language that can be used in a language that can be
+--- R3-recuperado ---
+Hello, I am a small language model, and I can be used in a language that can be used in a language that can be used in a language that can be used in a language that can be used in a language that can be
+DONE

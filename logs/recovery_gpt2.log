@@ -1,0 +1,33 @@
+2026-09-17 21:52:37,860 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-17 21:52:37,862 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-17 21:52:37,975 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json "HTTP/1.1 200 OK"
+2026-09-17 21:52:38,199 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  10%|█         | 15/148 [00:00<00:01, 118.75it/s]Loading weights:  24%|██▎       | 35/148 [00:00<00:00, 140.23it/s]Loading weights:  34%|███▍      | 50/148 [00:00<00:00, 119.20it/s]Loading weights:  43%|████▎     | 63/148 [00:00<00:01, 66.23it/s] Loading weights: 100%|██████████| 148/148 [00:00<00:00, 189.06it/s]
+2026-09-17 21:52:39,590 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 21:52:39,717 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/generation_config.json "HTTP/1.1 200 OK"
+2026-09-17 21:52:39,905 HTTP Request: HEAD https://huggingface.co/openai-community/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 21:52:40,036 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai-community/gpt2/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-17 21:52:40,241 HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 21:52:40,431 HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 21:52:41,173 [R] modelo=gpt2 arch=gpt2 lineales=48
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1410 > 1024). Running this sequence through the model will result in indexing errors
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+2026-09-17 21:52:42,426 [R] FP32=22.62 R0_TBC=12133.87
+2026-09-17 21:52:42,427 [R1] promovidas a FP 19/48 (E>0.65): ['transformer.h.0.mlp.c_proj', 'transformer.h.1.attn.c_proj', 'transformer.h.1.mlp.c_proj', 'transformer.h.10.mlp.c_proj', 'transformer.h.11.mlp.c_proj', 'transformer.h.2.attn.c_proj', 'transformer.h.2.mlp.c_proj', 'transformer.h.3.attn.c_attn']
+2026-09-17 21:52:42,832 [R] R1 promovidas=19 PPL=810.74
+2026-09-17 21:53:09,065 [R2] NLL base TBC = 7.6577
+2026-09-17 21:53:58,720 [R2] NLL final = 7.6300 (14 capas prefieren RTN)
+2026-09-17 21:53:59,281 [R] R2 PPL=785.49
+2026-09-17 21:53:59,615 [R3] parámetros entrenables: 1688064
+2026-09-17 21:54:07,978 [R3] step 1 loss=253.5030 held-NLL=8.5504
+2026-09-17 21:55:26,834 [R3] step 25 loss=89.3519 held-NLL=6.7357
+2026-09-17 21:56:50,253 [R3] step 50 loss=62.0669 held-NLL=6.3650
+2026-09-17 21:58:31,448 [R3] step 75 loss=42.2143 held-NLL=6.4883
+2026-09-17 22:00:18,592 [R3] step 100 loss=32.1487 held-NLL=6.2038
+2026-09-17 22:02:05,562 [R3] step 125 loss=34.2837 held-NLL=6.3161
+2026-09-17 22:03:54,345 [R3] step 150 loss=32.3135 held-NLL=6.3498
+2026-09-17 22:03:54,346 [R3] early-stop en step 150 (best held-NLL=6.2038)
+2026-09-17 22:03:55,337 [R] R3 PPL=60.57 best_held=6.2038 learnable=1688064
+2026-09-17 22:03:55,626 [R] fin en 693s
+RECOVERY {"stages": {"FP32": 22.61526597888981, "R0_TBC": 12133.867925391816, "R1_adapt": 810.7400740070045, "R2_accept": 785.4949008801776, "R3_distill": 60.57196037580447}, "eff_bits": 9.587}
